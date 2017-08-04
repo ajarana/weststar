@@ -17721,15 +17721,18 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 
 // Sign up forms
 .email-sign-up {
+   font-family: 'Arimo', sans-serif!important;
    color: #333;
    margin: 0;
 
    strong {
       font-weight: bold;
+      font-family: 'Arimo', sans-serif!important;
    }
 
    h1, h2, h3, h4, h5, h6, p {
       line-height: normal;
+      font-family: 'Arimo', sans-serif!important;
    }
 
    .sign-up-copy {
@@ -17743,6 +17746,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-form {
+      font-family: 'Arimo', sans-serif!important;
       .email-input, .sign-up-button {
          width: 100%;
          font-size: 15px;
