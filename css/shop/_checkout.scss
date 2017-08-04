@@ -1,0 +1,408 @@
+.checkout-cart-index {
+	margin-top: 158px;
+	color: #42494c;
+}
+
+#shop-checkout-wrapper {
+	max-width: 1280px;
+	margin: auto;
+	background: #ffffff;
+	border-top: 2px solid #0a88ff;
+	padding: 0 24px;
+
+	h1 {
+		line-height: 80px; 
+		margin: 0;
+		color: #42494c;
+	}
+
+	fieldset {
+		border: none;
+		outline: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.shop-checkout-cart {
+	background: #eef0f2;
+	border-radius: 4px;
+	border: 1px solid #8b979d;
+	margin: 0 0 10px 0;
+}
+
+.shop-checkout-cart-table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+
+	&__row {
+		display: table-row;
+		background: #ffffff;
+
+		&--header {
+			display: table-row;
+			background: #8b979d;
+			@include proxima-nova-bold(13, 48);
+		}
+	}
+
+	&__cell {
+		display: table-cell;
+		border: 1px solid #8b979d;
+		padding: 20px;
+		text-align: center;
+		vertical-align: middle;
+
+		&.text-left {
+			text-align: left;
+			padding: 28px;
+		}
+
+		&:first-child {
+			border-left: none;
+		}
+
+		&--header {
+			display: table-cell;
+			color: #ffffff;
+			text-transform: uppercase;
+			text-align: center;
+
+			&.text-left {
+				text-align: left;
+				padding: 0 0 0 28px;
+			}
+
+			&.small-width {
+				width: 125px;
+			}
+
+			&:first-child {
+				border-left: none;
+			}
+
+		}
+
+		.product-image {
+			display: inline-block;
+			padding-right: 28px;
+			vertical-align: top;
+			font-size: 0;
+			line-height: 0;
+		}
+
+		.product-meta {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 0 20px 0;
+			min-height: 110px;
+			min-width: 320px;
+
+			h2 {
+				@include proxima-nova-sbold(22, 22);
+				color: #42494c;
+
+				a {
+					color: #42494c;
+					text-decoration: none;
+
+					&:hover {
+						color: #0989ff
+					}
+				}
+			}
+
+			.product-sku {
+				margin: 8px 0;
+				@include proxima-nova-bold(12, 12);
+				color: #aeaeae;
+				text-transform: uppercase;
+			}
+
+			dl {
+				display: block;
+
+				dt {
+					display: inline-block;
+					margin-right: 10px;
+				}
+
+				dd {
+					display: inline-block;
+					margin: 0;
+				}
+			}
+	
+			.product-links {
+				position: absolute;
+				bottom: 0;
+
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					@include proxima-nova-bold(12, 12);
+
+					li {
+						border-right: 1px solid #aeaeae;
+						display: inline-block;
+
+						&:last-child {
+							border-right: none;
+						}
+
+						a {
+							padding: 0 6px;
+							color: #aeaeae;
+							text-decoration: none;
+							text-transform: uppercase;
+
+							&:hover {
+								color: #0989ff;
+							}
+						}
+
+						&:first-child a {
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+
+		input {
+			width: 50px;
+			text-align: center;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}
+
+.shop-checkout-cart-info {
+  padding: 18px 28px 28px 28px;
+
+  .shop-checkout-cart-coupon-buttons {
+    line-height: 0;
+    font-size: 0;
+
+    &__coupon-wrapper {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+
+      label {
+        font-size: 0;
+        line-height: 0;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 7px 16px 0 0;
+      }
+
+      input {
+        display: inline-block;
+        @include calc('width', '80% - 138px');
+        margin: 0 6px 0 0 !important;
+        vertical-align: top;
+      }
+
+      button {
+        display: inline-block;
+        width: 93px;
+        text-align: center;
+        line-height: 40px;
+        padding: 0;
+        @include proxima-nova-reg(16, 40);
+        @include transition(background .2s);
+        color: #ffffff;
+        vertical-align: top;
+        border-radius: 2px;
+        background: #c3ccd1;
+
+        &:hover {
+          background: #8b979d;
+        }
+      }
+    }
+
+    &__buttons-wrapper {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      text-align: right;
+
+      button, a {
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        padding: 0 20px;
+        @include proxima-nova-reg(16, 40);
+        @include transition(background .2s);
+        color: #ffffff;
+        vertical-align: top;
+        border-radius: 2px;
+        text-decoration: none;
+        background: #c3ccd1;
+
+        &:hover {
+          background: #8b979d;
+        }
+
+        &.btn-update {
+          background: #8b979d;
+        }
+      }
+    }
+  }
+}
+
+.shop-checkout-billing,
+.shop-checkout-shipping-wrapper {
+	background: #eef0f2;
+	border-radius: 4px;
+	border: 1px solid #8b979d;
+	padding: 28px;
+	margin: 5px 0;
+}
+
+.shop-checkout-billing,
+.shop-checkout-shipping,
+.shop-checkout-shipping-method,
+.shop-checkout-delivery-date {
+
+	.step-title {
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+	}
+
+	.step-fields-wrapper {
+		display: inline-block;
+		vertical-align: top;
+		width: 70%;
+	}
+
+	.step-fields {
+		background: #ffffff;
+		padding: 20px;
+		border-left: 3px solid #0a88ff;
+
+		&.toggle {
+			border-left: 3px solid #b3b9bd;
+			@include proxima-nova-sbold(20, 20);
+			color: #a0a9ae;
+
+			input {
+				width: auto;
+				height: auto;
+				vertical-align: baseline;
+				margin-right: 12px;
+			}
+
+			i {
+				float: right;
+			}
+		}
+
+		.field {
+			display: block;
+			font-size: 0;
+			line-height: 0;
+			margin: 12px 0;
+
+			.label-box {
+				display: inline-block;
+				vertical-align: top;
+				width: 180px;
+				text-align: right;
+				margin-right: 28px;
+
+				label {
+					line-height: 40px;
+					@include proxima-nova-reg(16, 16);
+				}
+			}
+
+			.input-box {
+				display: inline-block;
+				@include calc('width', '100% - 208px');
+
+				.select {
+					background: url('../img/checkout/select-bg.png') right 0 no-repeat;
+					cursor: pointer;
+					display: inline-block;
+
+					&:hover {
+						background: url('../img/checkout/select-bg.png') right -40px no-repeat;
+					}
+
+					select {
+						border: none;
+						cursor: pointer;
+						color: #ffffff;
+						@include proxima-nova-bold(16, 16);
+						background: transparent;
+						-webkit-appearance: none;
+						padding-right: 50px;
+
+						option {
+							color: #000000;
+						}
+					}
+				}
+
+				&.auto input,
+				&.auto select {
+					width: auto;
+				}
+
+				&.half input,
+				&.half select {
+					width: 50%;
+				}
+
+				&.third input,
+				&.third select {
+					width: 70%;
+				}
+			}
+		}
+
+		.field:first-child {
+			margin-top: 0;
+		}
+
+		.field:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	input {
+		background: #ffffff;
+		border: 1px solid #c1c1c1;
+		color: #42494c;
+		@include proxima-nova-bold(16, 16);
+
+		&.error {
+			border: 1px solid #ff1795;
+		}
+	}
+
+	input:focus {
+		background: #f3fbfd;
+		border: 1px solid #09c2ff;
+		color: #000000;
+	}
+}
+
+.shop-checkout-shipping-wrapper .step-fields {
+	border-bottom: 1px solid #eef0f2;
+}

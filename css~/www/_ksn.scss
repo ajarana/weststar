@@ -1,0 +1,552 @@
+.komando-shopping-network-container {
+
+  .btn-yellow {
+    background-color: #fdcc55;
+    color: #000000;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .btn-yellow:hover {
+    background-color: #fdec61;
+  }
+
+  .ksn-top-message {
+    background-color: #1b2757;
+    color: #FFFFFF;
+
+    div {
+      padding: 30px;
+    }
+
+    .ksn-message, .ksn-video {
+      margin-top: 1vw;
+    }
+  }
+
+  .ksn-top-mark-your-calendars {
+    background-color: #c4c4c4;
+    min-height: 100px;
+
+    .ksn-text-blob {
+      padding-bottom: 20px;
+    }
+
+    p {
+      line-height: 19px;
+      line-height: 1.9rem;
+      margin: 2px 0 0 0;
+    }
+    h2 {
+      margin: 20px 0 10px 0;
+    }
+
+    a {
+      display: inline;
+    }
+
+    .month {
+      text-align:center;
+      width: 130px;
+      background-color: #88b84a;
+      color: #ffffff;
+      position: absolute;
+      top: 25px;
+      padding-top: 10px;
+      border-radius: 5px 5px 0 0;
+      text-transform: uppercase;
+      margin-left: 20px;
+
+      .day {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 50px;
+        font-weight: bold;
+        min-height: 55px;
+        line-height: 60px;
+        margin-top: 5px;
+      }
+    }
+
+    @media screen and (max-width: 1135px){
+      .ksn-text-blob {
+        margin-left: 20%;
+      }
+    }
+
+    @media screen and (max-width: 800px){
+      .ksn-text-blob {
+        margin-left: 25%;
+        max-width: 400px;
+      }
+    }
+
+    @media screen and (max-width: 650px){
+      .ksn-text-blob {
+        margin-left: 30%;
+        max-width: 350px;
+      }
+    }
+
+    @media screen and (max-width: 580px){
+      .ksn-text-blob {
+        margin-left: 32%;
+      }
+    }
+
+    @media screen and (max-width: 500px){
+      .ksn-text-blob {
+        margin-top: 130px;
+        margin-left: 0;
+        max-width: 400px;
+      }
+
+      .month {
+        margin-left: 25%;
+      }
+    }
+
+  }
+
+  .ksn-bottom {
+    padding: 30px;
+
+    .ksn-tablet-image img {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    line-height: 25px;
+  }
+}
+
+
+/* NEW k2-ksn- stuff from ticket #3838 */
+
+.k2-ksn-mobile-hide {
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}
+
+.k2-ksn-mobile-show-only {
+  display: none;
+  @media screen and (max-width: 768px){
+    display: block;
+  }
+}
+
+.k2-ksn-top-heading-0 {
+  background-color: #1F2C5F;
+  color: #ffffff;
+  height: 50px;
+  text-align: center;
+  padding: 16px;
+  font-size: 30px;
+  font-weight: bold;
+
+  @media screen and (max-width: 768px){
+    font-size: 16px;
+  }
+}
+
+.k2-ksn-top-heading-1{
+  background-image: url('../img/www/komando-shopping-network/ksn-banner.jpg');
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  border-bottom: 4px solid #0a88ff;
+}
+
+.k2-ksn-top-heading-2 img {
+  max-width: 100%;
+}
+
+.k2-ksn-top-heading-2-mobile img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.k2-ksn-top-2-video-box {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  font-size: 20px;
+  width: 30%;
+  height: 50%;
+}
+
+.k2-ksn-top-2-video-box-mobile {
+  font-size: 20px;
+  width: 70%;
+  height: calc(70% * (9/18.7));
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+
+.ksn-box-details .heading {
+  font-size: 18px;
+  display: block;
+  margin: 5px 0 5px 0;
+}
+
+.ksn-box-details .desc {
+  font-size: 15px;
+  line-height: normal;
+  display: block;
+  color: #7d7d7d;
+}
+
+#k2_ksn_top_video_iframe, #k2_ksn_top_video_iframe_mobile {
+  border: 5px solid #000000;
+}
+
+.k2-ksn-plus-5-off {
+  font-size: 16px;
+}
+
+.k2-ksn-5-off-price {
+  font-size: 20px;
+  color: #ff0000;
+}
+
+.k2-ksn-with-coupon {
+  font-size: 12px;
+}
+
+.k2-ksn-prices-display {
+  line-height: 16px;
+}
+
+.k2-ksn-product-vid-thumb {
+  text-align: center;
+  max-width: 100%;
+  a {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 3px;
+    p {
+      max-width: 70%;
+      margin-left: 15%;
+      line-height: normal;
+    }
+  }
+  img {
+    max-width: 150px;
+    @media screen and (max-width: 900px){
+      max-width: 100px;
+    }
+    @media screen and (max-width: 768px){
+      max-width: initial;
+      width: 300px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.k2-ksn-top-links-container {
+  text-align: center;
+  min-height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #ffffff;
+
+  .k2-ksn-top-links {
+    padding: 10px;
+
+    @media screen and (max-width: 768px){
+      display: block;
+      width: 100%;
+    }
+
+  }
+}
+
+#k2_ksn_add_to_calendar_menu {
+  text-decoration: underline;
+  padding-top: 0;
+}
+
+.k2-ksn-add-to-cal-link {
+  background-color: #007fff;
+  padding: 5px;
+  a {
+    color: #ffffff;
+  }
+}
+
+#k2_ksn_add_to_calendar_list {
+  display: none;
+  z-index: 99;
+  top: 30px;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 1px;
+  text-align: center;
+  list-style: none;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.k2-ksn-reason-img {
+  margin-bottom: 10px;
+}
+
+.k2-ksn-reason-text {
+  line-height: 24px;
+}
+
+.k2-ksn-super-large-padding {
+  padding: 20px;
+}
+
+.k2-ksn-large-padding {
+  padding: 30px;
+}
+
+.k2-ksn-mark-your-calendar {
+  padding-top: 5px;
+}
+
+.k2-ksn-small-padding {
+  padding: 10px;
+}
+
+.k2-ksn-all-caps {
+  text-transform: uppercase;
+}
+
+.k2-ksn-medium-headline {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  line-height: normal;
+}
+
+.k2-ksn-super-sized-text {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 5px 0 10px 10px;
+  line-height: 40px;
+}
+
+.ksn-video img {
+  border: 5px solid #097bd6;
+  max-width: 100%;
+}
+
+.k2-ksn-almost-super-sized-text {
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: bold;
+  padding: 2.5% 10px 10px 100px;
+}
+
+.k2-ksn-calendar-portion {
+  min-height: 100px;
+  text-align: right;
+  padding-top: 8px;
+  line-height: normal;
+  color: #ffffff;
+
+  .k2-ksn-month {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.k2-ksn-tablet-top {
+  max-width: 400px;
+  width: 90%;
+}
+
+.k2-ksn-centered {
+  text-align: center;
+}
+
+.k2-ksn-background-dark-sky-blue {
+  background-color: rgb(21,123,198);
+}
+
+.k2-ksn-background-light-gray {
+  background-color: rgb(236,236,236);
+}
+
+.k2-ksn-background-pure-white {
+  background-color: #ffffff;
+}
+
+.k2-ksn-no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.k2-ksn-no-margin-top {
+  margin-top: 0;
+}
+
+.k2-ksn-no-margin {
+  margin: 0;
+}
+
+.k2-ksn-small-margin-top {
+  margin-top: 10px;
+}
+
+.k2-ksn-small-margin-bottom {
+  margin-bottom: 8px;
+}
+
+.k2-ksn-middle-reasons {
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.k2-ksn-skewbar-skewed {
+  @media screen and (min-width: 790px){
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg); /* Standard syntax */
+    width: 300px;
+    height: 70px;
+    background-color: red;
+  }
+  @media screen and (max-width: 790px){
+    width: 100%;
+    height: 50px;
+  }
+}
+.k2-ksn-skewbar-special {
+  @media screen and (min-width: 790px){
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg); /* Standard syntax */
+    padding-top: 25px;
+    padding-left: 30px;
+    color: white;
+  }
+  @media screen and (max-width: 790px) {
+    padding-top: 18px;
+  }
+}
+.k2-ksn-skewbar-gray {
+  background-color: lightgray;
+  width: 100%;
+  font-weight: bold;
+  font-size: 25px;
+
+  @media screen and (max-width: 1110px){
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 885px){
+    font-size: 16px;
+  }
+}
+.k2-ksn-skewbar-red {
+  background-color: red;
+  width: 10%;
+  margin-left: -10px;
+  display: inline-block;
+  text-align: center;
+  @media screen and (max-width: 790px){
+    color: white;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.k2-ksn-skewbar-open-box {
+  display: inline-block;
+  width: 60%;
+  margin-left: 250px;
+  @media screen and (max-width: 790px){
+    width: 60%;
+    position: static;
+    font-size: 18px;
+    margin-left: 20%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1110px){
+  .k2-ksn-tablet-top {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .k2-ksn-almost-super-sized-text {
+    padding-left: 30px;
+  }
+  .k2-ksn-top-heading-1 {
+    min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .k2-ksn-almost-super-sized-text {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .k2-ksn-calendar-portion {
+    div {
+      display: inline;
+    }
+    text-align: center;
+    min-height: 0;
+    padding: 10px;
+  }
+
+  .k2-ksn-mark-your-calendar {
+    padding-left: 40px;
+  }
+
+  .k2-ksn-super-sized-text {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .k2-ksn-reason-text {
+    margin: auto;
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+  .k2-ksn-tablet-top {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .k2-ksn-almost-super-sized-text {
+    font-size: 40px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+  .k2-ksn-top-heading-1 {
+    min-height: 112px;
+    padding: 10px 30px 10px 40px;
+  }
+  .k2-ksn-medium-headline {
+    padding-top: 0px;
+  }
+  .k2-ksn-hide-on-mobile {
+    display: none;
+  }
+}

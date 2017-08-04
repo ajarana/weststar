@@ -1,0 +1,408 @@
+.komandotab-header {
+	position: relative;
+	font-size: 0;
+	line-height: 0;
+	background: url('../img/komandotab/header-bg.jpg') top left no-repeat;
+	min-height: 250px;
+	max-height: 396px;
+
+	@media screen and (min-width: 800px) {
+		min-height: 310px;
+	}
+}
+
+.komandotab-header__kim {
+
+	img {
+		position: absolute;
+		bottom: 0;
+		right: -40px;
+		max-width: 260px;
+	}
+
+	@media screen and (min-width: 680px) {
+		img{
+			bottom: 0;
+			left: 120px;
+		}
+	}
+
+	@media screen and (min-width: 800px) {
+		img{
+			bottom: 0;
+			left: 140px;
+			max-width: 300px;
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		position: relative;
+		display: inline-block;
+		width: 50%;
+		text-align: right;
+		vertical-align: bottom;
+
+		img {
+			position: relative;
+			bottom: auto;
+			left: auto;
+			right: auto;
+			max-width: 100%;
+		}
+	}
+}
+
+.komandotab-header__logo {
+	position: absolute;
+	bottom: 10px;
+	left: 28px;
+
+	color: #ffffff;
+
+	span {
+		display: block;
+		
+		span {
+			display: inline-block;
+		}
+	}
+
+	@media screen and (min-width: 680px) {
+		text-align: center;
+		right: 28px;
+		left: auto;
+	}
+	
+	@media screen and (min-width: 1000px) {
+		position: relative;
+		display: inline-block;
+		width: 50%;
+		vertical-align: bottom;
+	}
+}
+
+.logo__limited {
+
+	@include proxima-nova-light(30, 30);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+
+	@media screen and (min-width: 680px) {
+		@include proxima-nova-light(30, 30);
+		text-shadow: none;
+	}
+
+	@media screen and (min-width: 1000px) {
+		@include proxima-nova-light(55, 55);
+	}
+
+	@media screen and (min-width: 1180px) {
+		@include proxima-nova-light(65, 65);
+	}
+}
+
+.logo__komandotab {
+
+	@include proxima-nova-light(34, 34);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+
+	@media screen and (min-width: 680px) {
+		@include proxima-nova-light(34, 34);
+		text-shadow: none;
+	}
+
+	@media screen and (min-width: 1000px) {
+		@include proxima-nova-light(66, 60);
+	}
+
+	@media screen and (min-width: 1180px) {
+		@include proxima-nova-light(76, 70);
+	}
+}
+
+.logo__tablet {
+
+	@media screen and (min-width: 680px) {
+		@include proxima-nova-light(34, 34);
+		margin: 0 0 20px 0;
+	}
+
+	@media screen and (min-width: 1000px) {
+		@include proxima-nova-light(66, 60);
+		margin: 0;
+	}
+
+	@media screen and (min-width: 1180px) {
+		@include proxima-nova-light(76, 70);
+	}
+}
+
+.logo__more-information {
+
+	@media screen and (min-width: 800px) {
+		margin: 20px 0;
+	}
+}
+
+.komandotab-icons {
+	font-size: 0;
+	line-height: 0;
+	background: #002664;
+	border-top: 3px solid #06daff;
+	border-bottom: 5px solid #06daff;
+	padding: 20px;
+
+	@media screen and (min-width: 680px) {
+		padding: 10px 0;
+	}
+}
+
+.komandotab-icons__icon {
+	@include proxima-nova-bold(12, 14);
+	color: #ffffff;
+	text-transform: uppercase;
+
+	img {
+		display: inline-block;
+		width: 40px;
+		margin: 0 10px 10px 0;
+		vertical-align: top;
+	}
+
+	&:last-child {	
+		img {
+			margin: 0 10px 0 0;
+		}
+	}
+
+	span {
+		display: inline-block;
+		@include calc('width', '100% - 60px');
+		vertical-align: top;
+		margin-top: 12px; 
+	}
+
+	@media screen and (min-width: 680px) {
+		display: inline-block;
+		width: 20%;
+		text-align: center;
+		vertical-align: top;
+		padding: 0 20px;
+
+		img {
+			width: auto;
+			max-width: 100%;
+			display: block;
+			text-align: center;
+			margin: 0 auto 10px auto;
+		}
+
+		span {
+			line-height: 14px;
+		}
+
+		&:last-child {	
+			img {
+				margin: 0 auto 10px auto;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		padding: 0 20px;
+	}
+}
+
+.komandotab-content {
+	padding: 32px;
+	font-size: 0;
+	line-height: 0;
+	background: url('../img/komandotab/content-bg.png') top left no-repeat;
+}
+
+.komandotab-content__left {
+	@include proxima-nova-reg(20, 23);
+
+	a {
+		display: inline;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	p:first-of-type {
+		margin-top: 0;
+	}
+
+	.content-tab-image {
+		margin-left: -3px;
+	}
+
+	.content-tab-after-image {
+		margin: -64px 0 0 0;
+	}
+
+	.komandotab-faqs-toggle {
+		margin: 0;
+	}
+
+	a.more-information-button {
+		display: inline-block !important;
+	}
+
+	.video-bubble {
+		@include proxima-nova-reg(14, 16);
+		background: #91a647;
+		color: #ffffff;
+		border-radius: 2px;
+		padding: 10px;
+	}
+
+	.mobile-video-container {
+		margin: 16px 0;
+	}
+
+	#mobile-video-message-from-kim {
+		margin: 0 0 16px 0;
+	}
+
+	@media screen and (min-width: 680px) {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding: 32px;
+	}
+
+	@media screen and (min-width: 1000px) {
+		.content-tab-after-image {
+			margin: -100px 0 0 0;
+		}
+	}
+}
+
+.komandotab-content__right {
+	@include proxima-nova-reg(20, 23);
+
+	a {
+		display: inline;
+	}
+
+	figure {
+		margin: 30px 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	figure h3 {
+		margin: 0 0 6px 0;
+	}
+
+	figure figcaption a {
+		font-weight: bold;
+	}
+
+	@media screen and (min-width: 680px) {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding: 32px;
+	}
+}
+
+.komandotab-name {
+	display: inline-block;
+	font-family: 'ProximaNovaBold' !important;
+	text-transform: uppercase;
+
+	span {
+		font-family: 'ProximaNovaLight' !important;
+	}
+}
+
+a.more-information-button {
+	@include proxima-nova-reg(30, 30);
+	letter-spacing: -0.2px;
+	color: #231f20;
+	padding: 20px 16px;
+	border-radius: 8px;
+	background: #ffc40d;
+	@include transition(background .2s);
+
+	&:hover {
+		color: #231f20;
+		background: #ffd551;
+	}
+
+	@media screen and (min-width: 680px) {
+		display: inline-block;
+	}
+}
+
+.komandotab-faqs-toggle {
+	cursor: pointer;
+
+	&:hover {
+		color: #0989ff;
+	}
+}
+
+.komandotab-faqs {
+	display: none;
+}
+
+.kom-accordion-item {
+	margin: 14px 0;
+	border: 1px solid #e6e6e6;
+	background: #fcfcfc;
+	border-radius: 2px;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.kom-accordion-toggle {
+	position: relative;
+	cursor: pointer;
+	padding: 8px 30px 8px 8px;
+	@include transition(background .2s);
+	@include transition(color .2s);
+
+	i {
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		margin-top: -10px;
+	}
+
+	&:hover,
+	&.active {
+		color: #0989ff;
+		background: #f2f2f2;
+	}
+}
+
+.kom-accordion-content {
+	display: none;
+	padding: 8px;
+	border-top: 1px solid #e6e6e6;
+
+	p:first-child {
+	  margin-top: 0;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+  .bold-highlight {
+	font-weight: bold;
+	color: #0989ff;
+  }
+}

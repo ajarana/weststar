@@ -1,0 +1,232 @@
+/*
+==========================================================================
+   Common Variables and Mixins
+========================================================================== */
+
+// Basic Colors
+$white: #fff;
+$black: #000;
+$font-color: #333333;
+$light-gray-border: #e6e6e6;
+
+// Social colors
+$facebook: #306299;
+$twitter: #25c4f1;
+$google-plus: #e8402e;
+$pinterest: #e8402e;
+
+// Komando Brand colors
+$navy: #002487;         // blue 1
+$cobalt: #0033be;       // blue 2
+$azure: #0989ff;        // blue 3
+$sky: #09c2ff;          // blue 4 - Use very sparingly
+
+$loblolly: #09c2ff;     // light bluish slate
+$slate: #42494c;        // dark gray
+$razzmatazz: #ff1795;   // intense pink
+
+$cacheupdate: 201503021040;
+
+
+//font definitions
+$default-font: 'ProximaNovaReg', sans-serif;
+
+@mixin rounded-corners($top-left, $top-right, $bottom-right, $bottom-left) {
+    -webkit-border-top-left-radius: $top-left + px;
+    -webkit-border-top-right-radius: $top-right + px;
+    -webkit-border-bottom-right-radius: $bottom-right + px;
+    -webkit-border-bottom-left-radius: $bottom-left + px;
+    -moz-border-radius-topleft: $top-left + px;
+    -moz-border-radius-topright: $top-right + px;
+    -moz-border-radius-bottomright: $bottom-right + px;
+    -moz-border-radius-bottomleft: $bottom-left + px;
+    border-top-left-radius: $top-left + px;
+    border-top-right-radius: $top-right + px;
+    border-bottom-right-radius: $bottom-right + px;
+    border-bottom-left-radius: $bottom-left + px;
+}
+
+@mixin box-sizing {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin transition($expression) {
+    -webkit-transition: $expression;
+    -moz-transition: $expression;
+    -o-transition: $expression;
+    transition: $expression;
+}
+
+@mixin box-shadow($top, $left, $color) {
+    -webkit-box-shadow: $top $left $color;
+    box-shadow: $top $left $color;
+}
+
+@mixin subtle-inset {
+    box-shadow: inset 0px 10px 30px 0px rgba($black, .1);
+}
+
+@mixin hide-text {
+    overflow: hidden;
+    text-indent: -9000px;
+    display: block;
+}
+
+@mixin navigation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    > li {
+        display: block;
+        float: left;
+        &:last-child {
+            margin-right:0px;
+        }
+    }
+}
+
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -o-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin bg-gradient($from, $to) {
+    background: -webkit-linear-gradient(top, #{$from} 0%, #{$to} 100%); 
+    background: linear-gradient(to bottom, #{$from} 0%, #{$to} 100%);
+}
+
+@mixin color-gradient($from, $to) {
+    color: #{$from};
+    background: -webkit-linear-gradient(#{$from}, #{$to});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin active-main-nav {
+    border-bottom: 1px solid $tahoe-blue;
+    color: $tahoe-blue;
+}
+
+@mixin arrow-up($size, $color) {
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+}
+
+@mixin arrow-down($size, $color) {
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+}
+
+@mixin arrow-left($size, $color) {
+    width: 0;
+    height: 0;
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+}
+
+@mixin arrow-right($size, $color) {
+    width: 0;
+    height: 0;
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+}
+
+
+// Media queries
+
+@mixin respond-to($media) {
+    @if $media == small-mode {
+        @media only screen and (max-width: 420px) { @content }
+    }
+    @else if $media == medium-mode {
+        @media only screen and (max-width: 768px) { @content }
+    }
+    @else if $media == large-mode {
+        @media only screen and (max-width: 980px) { @content }
+    }
+}
+
+
+/*
+==========================================================================
+   Helper classes
+========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+

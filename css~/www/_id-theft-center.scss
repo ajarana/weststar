@@ -1,0 +1,561 @@
+.identity-theft-center-banner {
+  background: #e8e8e8;
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 0;
+  line-height: 0;
+  padding: 20px 0;
+
+  .id-logo {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+
+    a {
+      display: block;
+      padding: 0 20px;
+      text-align: right;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .ll-logo {
+    display: inline-block;
+    width: 30%;
+    border-left: 2px solid #808080;
+    vertical-align: middle;
+
+    a {
+      display: block;
+      padding: 0 20px;
+      text-align: left;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.identity-theft-center {
+
+  .content-left {
+    padding: 0;
+
+    .grid {
+
+      @media screen and (min-width: 680px) {
+        padding: 15px 20px;
+      }
+
+      &-item {
+        min-width: 250px;
+
+        @media screen and (min-width: 680px) {
+          min-width: 250px;
+          @include calc('width', '50% - 20px');
+          margin: 10px;
+        }
+
+        @media screen and (min-width: 1220px) {
+          @include calc('width', '33.333333% - 20px');
+        }
+
+        h3 {
+
+          @media screen and (min-width: 1000px) {
+            line-height: 26px;
+            line-height: 2.6rem;
+            font-size: 22px;
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+
+    .kom-identity-theft-slider {
+      padding: 10px 10px 0 10px;
+
+      #slider-images {
+
+        .bx-caption {
+          padding: 10px;
+          @include proxima-nova-reg(20, 20);
+          color: #ffffff;
+
+          @media screen and (min-width: 680px) {
+            @include proxima-nova-reg(30, 30);
+          }
+        }
+      }
+
+      #slider-thumbs {
+        padding: 10px 0 0 0;
+
+        @media screen and (min-width: 1000px) {
+          padding: 20px 0 0 0;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        padding: 30px 30px 0 30px;
+      }
+    }
+  }
+}
+
+.identity-theft-assessment {
+
+  .content-full {
+    padding: 0;
+
+    .idtc-assessment {
+      position: relative;
+
+      &__kim {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 220px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        @media screen and (min-width: 1000px) {
+          width: 350px;
+        }
+      }
+
+      &__header {
+        background: #00175b url('../img/full-width-dark-blue-bg.jpg') top center no-repeat;
+        padding: 10px;
+        color: #ffffff;
+
+        p {
+          margin: 0;
+          @include proxima-nova-sbold(24, 24);
+
+          @media screen and (min-width: 680px) {
+            @include proxima-nova-sbold(34, 34);
+          }
+        }
+
+        @media screen and (min-width: 680px) {
+          padding: 20px 60px 20px 220px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding: 20px 60px 20px 360px;
+        }
+      }
+
+      .idtc-assessment-progress {
+        margin: 10px;
+        display: block;
+        height: 14px;
+        background: #c2c2c2;
+        position: relative;
+
+        &__bar {
+          position: absolute;
+          height: 14px;
+          left: 0;
+          width: 4px;
+          background: #0399e7;
+
+          &:after {
+            bottom: 100%;
+            right: 0;
+            content: ' ';
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-bottom: 4px solid #0399e7;
+            border-left: 4px solid transparent;
+          }
+        }
+
+        &__count {
+          position: absolute;
+          top: -20px;
+          left: -8px;
+          color: #6f6f6f;
+        }
+
+        @media screen and (min-width: 680px) {
+          margin: 20px 60px 20px 220px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          margin: 20px 60px 20px 360px;
+        }
+      }
+
+      .idtc-assessment-form {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 24px;
+        line-height: 2.4rem;
+        position: relative;
+        padding: 10px;
+
+        &__questions-container {
+          position: relative;
+        }
+
+        .identity-theft-question {
+          width: 100%;
+          padding: 0;
+          margin: 0 0 40px 0;
+
+          .identity-theft-question__text {
+            margin: 0 0 16px 0;
+          }
+
+          &__prev-question,
+          &__next-question {
+            display: inline-block;
+            background: #0399e7;
+            color: #ffffff;
+            padding: 0 16px;
+            border-radius: 3px;
+            margin-top: 20px;
+            @include proxima-nova-reg(16, 32);
+          }
+
+           &__prev-question {
+             margin-left: 20px;
+             float: left;
+
+            @media screen and (min-width: 680px) {
+              margin-left: 40px;
+              float: left;
+            }
+          }
+
+          &__next-question {
+            margin-right: 20px;
+            float: right;
+
+            @media screen and (min-width: 680px) {
+              margin-right: 40px;
+              float: right;
+            }
+          }
+
+          .identity-theft-answer {
+            font-size: 16px;
+            font-size: 1.6rem;
+            margin: 0 0 0 20px;
+
+            div {
+              display: inline;
+
+              .identity-theft-question__input {
+
+                input {
+                  width: 18px;
+                  height: 18px;
+                  margin: 2px 12px 0 0;
+                  vertical-align: top;
+                }
+              }
+            }
+
+            @media screen and (min-width: 680px) {
+              margin: 0 0 0 40px;
+            }
+          }
+        }
+
+        &__button {
+          visibility: hidden;
+          text-align: center;
+
+          button {
+            background: #d5d5d5;
+            border-radius: 2px;
+            padding: 0 40px;
+            margin: 14px 0;
+            line-height: 48px;
+            line-height: 4.8rem;
+            @include transition(background .2s);
+
+            &:hover {
+              background: #a2a2a2;
+            }
+          }
+        }
+
+        @media screen and (min-width: 680px) {
+          padding: 20px 60px 20px 220px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding: 20px 60px 20px 360px;
+        }
+      }
+
+      .error {
+        padding: 14px;
+        text-align: center;
+        color: #e52323;
+        background: #ffffff;
+        border-radius: 4px;
+        border-bottom: 2px solid #e52323;
+        @include transition(background .2s);
+      }
+    }
+
+    .idtc-spinner {
+      display: none;
+      background: #00175b url('../img/full-width-dark-blue-bg.jpg') top center no-repeat;
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 22px;
+      font-size: 2.2rem;
+      line-height: 24px;
+      line-height: 2.4rem;
+
+      @media screen and (min-width: 680px) {
+        padding: 30px 60px;
+      }
+    }
+
+    .idtc-results {
+      display: none;
+      padding: 0;
+      position: relative;
+
+      p:first-child {
+        margin-top: 0;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      &__kim {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 220px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        @media screen and (min-width: 1000px) {
+          width: 350px;
+        }
+      }
+
+      &__header {
+        background: #00175b url('../img/full-width-dark-blue-bg.jpg') top center no-repeat;
+        padding: 10px;
+        color: #ffffff;
+
+        h2 {
+          margin-top: 0;
+          @include proxima-nova-bold(28, 32);
+        }
+
+        .risk-probability {
+          position: relative;
+          overflow: hidden;
+          padding: 2px 0;
+
+          &__indicator-top {
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: #7E7E7E;
+            top: 0;
+            left: 0;
+            margin-left: -24px;
+
+            &:after {
+              top: 0;
+              left: 50%;
+              border: solid transparent;
+              content: '';
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(255, 255, 255, 0);
+              border-top-color: #ffffff;
+              border-width: 10px;
+              margin-left: -10px;
+            }
+          }
+
+          &__indicator-bottom {
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: #7E7E7E;
+            bottom: 0;
+            left: 0;
+            margin-left: -24px;
+
+            &:after {
+              bottom: 0;
+              left: 50%;
+              border: solid transparent;
+              content: '';
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(255, 255, 255, 0);
+              border-bottom-color: #ffffff;
+              border-width: 10px;
+              margin-left: -10px;
+            }
+          }
+
+          &__board {
+            line-height: 0;
+            font-size: 0;
+            width: 100%;
+            margin: 0;
+
+            .low-risk {
+              position: absolute;
+              left: 4%;
+              @include proxima-nova-bold(14, 18);
+              text-transform: uppercase;
+              background: rgba(255, 255, 255, .3);
+              padding: 0 8px;
+              top: 16px;
+            }
+
+            .high-risk {
+              position: absolute;
+              right: 4%;
+              @include proxima-nova-bold(14, 18);
+              text-transform: uppercase;
+              background: rgba(255, 255, 255, .3);
+              padding: 0 8px;
+              top: 16px;
+            }
+
+            .board-colors {
+              width: 8.333%;
+              height: 50px;
+              display: inline-block;
+              vertical-align: top;
+
+              &.blue-1 { background: #3ea9f5; }
+              &.blue-2 { background: #3e8af5; }
+              &.blue-3 { background: #3e6cf5; }
+              &.yellow-1 { background: #fff06c; }
+              &.yellow-2 { background: #ffea1b; }
+              &.yellow-3 { background: #ffca05; }
+              &.orange-1 { background: #ffa358; }
+              &.orange-2 { background: #ff8d2f; }
+              &.orange-3 { background: #e47518; }
+              &.red-1 { background: #d24224; }
+              &.red-2 { background: #b81209; }
+              &.red-3 { background: #e4150d; }
+            }
+          }
+        }
+
+        @media screen and (min-width: 680px) {
+          padding: 30px 60px 30px 220px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding: 30px 60px 30px 360px;
+        }
+      }
+
+      &__body {
+        padding: 10px;
+
+        .idtc-share {
+          text-transform: uppercase;
+          color: #949494;
+          @include proxima-nova-bold(18, 22);
+          margin: 36px 0 0 0;
+
+          p {
+            margin: 0;
+          }
+
+          &__facebook,
+          &__twitter {
+            color: #ffffff;
+            border-radius: 2px;
+            background-size: 24px !important;
+            background-repeat: no-repeat !important;
+            text-transform: none;
+            display: inline-block;
+            padding: 0 12px 0 30px;
+            background-position: 3px 7px !important;
+            @include proxima-nova-reg(14, 40);
+          }
+
+          &__facebook {
+            background: #3c5a98 url('../img/share-facebook.png');
+
+            &:hover {
+              background-color: darken(#3c5a98, 5%);
+            }
+          }
+
+          &__twitter {
+            background: #00aced url('../img/share-twitter.png');
+
+            &:hover {
+              background-color: darken(#00aced, 5%);
+            }
+          }
+        }
+
+        @media screen and (min-width: 680px) {
+          padding: 30px 60px 30px 220px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding: 30px 60px 30px 360px;
+        }
+      }
+
+      @media screen and (min-width: 680px) {
+        min-height: 580px;
+      }
+
+      @media screen and (min-width: 1000px) {
+        min-height: 950px;
+      }
+    }
+  }
+}
+
+.grid-item-generic {
+  margin: 10px auto;
+  width: 300px;
+
+  @media screen and (min-width: 1000px) {
+    margin: 20px auto;
+  }
+}
+
+.grid-item-assessment {
+  margin: 10px auto;
+  text-align: center;
+
+  @media screen and (min-width: 1000px) {
+    margin: 20px auto;
+  }
+}

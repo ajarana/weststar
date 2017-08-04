@@ -1,0 +1,112 @@
+.ac-page {
+
+  text-align: center;
+
+  .kc-join-now-heading {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .kc-enter-email {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  #email {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .sign-up-button {
+    width: 50%;
+    margin: auto;
+  }
+
+  button {
+    font-weight: bold !important;
+  }
+
+}
+
+.checkout-footnote {
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkout-footnote {
+    max-width: 100%;
+  }
+}
+
+/* For account.html.erb #4445 */
+.kom-club-gradient-bg {
+    text-align: right;
+    padding: 7px 15px 6px 0;
+
+    .red-exclamation-diamond {
+        width: 32px;
+        height: 32px;
+    }
+    .benefits-text-long {
+        display: inline;
+        color: #ffcf33;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        position: relative;
+    }
+    .benefits-text-short {
+        display: none;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .kom-club-gradient-bg {
+        text-align: right;
+        padding: 7px 15px 6px 0;
+
+        .benefits-text-long {
+            display: none;
+        }
+        .benefits-text-short {
+            display: inline;
+            color: #ffcf33;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            position: relative;
+            top: -10px;
+        }
+    }
+}
+@media only screen and (max-width: 680px) {
+    .kom-club-gradient-bg {
+        text-align: right;
+        padding: 3px 15px 2px 0;
+
+        .red-exclamation-diamond {
+            width: 20px;
+            height: 20px;
+        }
+        .benefits-text-long {
+            display: none;
+        }
+        .benefits-text-short {
+            display: inline;
+            color: #ffcf33;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            top: -5px;
+        }
+    }
+}
+
+.kims-club input.newsletter-option[type=checkbox] {
+  margin: auto;
+  position: static;
+}

@@ -1,0 +1,55 @@
+.sub-menu-sponsors {
+  width: 566px;
+
+  .menu-sponsors {
+    position: relative;
+    width: 328px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    background: rgba(0, 47, 159, .65);
+    padding: 8px 0;
+
+    &__header {
+      display: block;
+      width: 100%;
+      padding: 2px 0 0 16px;
+      @include proxima-nova-reg(18, 26);
+    }
+
+    &__sponsors {
+      padding: 0 8px;
+      height: 184px;
+      overflow: hidden;
+      position: relative;
+
+      a {
+        display: inline-block;
+        background: #ffffff;
+        margin: 8px;
+        padding: 12px 0 !important;
+        line-height: 0 !important;
+        width: 140px;
+
+        &:hover {
+          background: #ffffff !important;
+          border-radius: 0 !important;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: inline-block !important;
+    vertical-align: top;
+    width: 230px;
+    padding: 0 0 0 4px !important;
+  }
+}
+
