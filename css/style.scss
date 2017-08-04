@@ -17918,13 +17918,13 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 }
 
 // pop-up sign-up
-.pop-up-sign-up {
+.article-page-pop-up {
    position: relative;
    color: white;
    text-align: center;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
-   background-image: url('assets/backgrounds/pop-up-sign-up/nl-background.jpg');
+   background-image: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
    width: 320px;
    height: 300px;
    align-items: flex-end;
@@ -17932,7 +17932,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    .dotted-lines {
       padding: 14px 0;
       margin: 6px 0 10px;
-      background: url('assets/backgrounds/pop-up-sign-up/dotted-lines.png') 50% 50%;
+      background: url('assets/backgrounds/article-page-pop-up/dotted-lines.png') 50% 50%;
 
       p:first-child, p:last-child {
          margin: 0;
