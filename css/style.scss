@@ -17700,6 +17700,8 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 }
 /* End Birthday Banner */
 
+$temp-media-query: 901px;
+$temp-margins: 0 auto;
 
 .flex-align-center {
    display: flex;
@@ -17724,6 +17726,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    font-family: 'Arimo', sans-serif!important;
    color: #333;
    margin: 0;
+   margin: $temp-margins;
 
    strong {
       font-weight: bold;
@@ -17751,14 +17754,21 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          width: 100%;
          font-size: 15px;
          border-radius: 4px;
-         line-height: 36px;
+         // line-height: 36px;
+         line-height: 18px;
          text-align: center;
-         padding: 0 15px;
+         // padding: 0 15px;
+         padding: 8px 15px;
+
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;
       }
 
       .sign-up-button {
          color: #333;
          background-color: #fccd3b;
+         border: 1px solid #fccd3b;
          margin: 8px 0 10px;
       }
    }
@@ -17767,8 +17777,8 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       position: absolute;
       width: 14px;
       height: 14px;
-      right: 5px;
-      top: 5px;
+      right: 6px;
+      top: 6px;
       cursor: pointer;
 
       .bar {
@@ -17797,12 +17807,12 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       font-size: 13px;
    }
 
-   @media (min-width: 768px) {
+   @media (min-width: $temp-media-query) {
       .x-icon-wrapper {
          width: 22px;
          height: 22px;
-         top: 10px;
-         right: 10px;
+         top: 11px;
+         right: 11px;
 
          .bar {
             width: 22px;
@@ -17810,6 +17820,13 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 
          #top-bar {
             margin-right: -22px;
+         }
+      }
+
+      .jumbo-sign-up-form {
+         .email-input, .sign-up-button {
+            font-size: 24px;
+            line-height: 32px;
          }
       }
    }
@@ -17903,6 +17920,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    @media (min-width: 851px) {
       width: 850px;
       width: 100%;
+      max-width: 850px;
 
       justify-content: flex-start;
 
@@ -17975,9 +17993,8 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       margin: 0;
    }
 
-   @media (min-width: 768px) {
+   @media (min-width: $temp-media-query) {
       width: 850px;
-      width: 100%;
       height: 425px;
       align-items: center;
 
@@ -17986,10 +18003,10 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       }
 
       .sign-up-form {
-         .sign-up-button, .email-input {
-            font-size: 28px;
-            line-height: 48px;
-         }
+         // .sign-up-button, .email-input {
+         //    font-size: 28px;
+         //    line-height: 32px;
+         // }
 
          .email-input {
             width: 80%;
@@ -18062,7 +18079,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       }
    }
 
-   @media (min-width: 851px) {
+   @media (min-width: $temp-media-query) {
       width: 850px;
       height: 425px;
 
@@ -18071,10 +18088,10 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       }
 
       .sign-up-form {
-         .sign-up-button, .email-input {
-            font-size: 24px;
-            line-height: 48px;
-         }
+         // .sign-up-button, .email-input {
+         //    font-size: 24px;
+         //    line-height: 32px;
+         // }
 
          .sign-up-button {
             font-weight: normal;
