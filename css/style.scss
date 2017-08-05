@@ -17722,13 +17722,14 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    margin: 0 auto;
 
    strong {
-      font-family: 'webfontbold', sans-serif;
+      font-family: 'ProximaNovaBold', sans-serif;
    }
 
    h1, h2, h3, h4, h5, h6, p, input, button, label {
       color: #333;
       line-height: normal;
-      font-family: 'webfontregular', sans-serif;
+      line-height: 1;
+      font-family: 'ProximaNovaReg', sans-serif;
    }
 
    input::-webkit-input-placeholder {
@@ -17763,6 +17764,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          font-size: 15px;
          border-radius: 4px;
          line-height: 18px;
+         line-height: 1.1;
          text-align: center;
          padding: 8px 15px;
          height: auto;
@@ -17782,13 +17784,14 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          border: 1px solid #fccd3b;
          margin: 8px 0 10px;
 
-         font-family: 'webfontsemibold';
+         font-family: 'ProximaNovaSbold', sans-serif;
       }
    }
 
    .checkbox {
       width: 15px;
       height: 15px;
+      // height: auto;
       margin: 0 5px 0 0;
       border: none;
       padding: 0;
@@ -17946,9 +17949,9 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .dotted-lines {
-      padding: 14px 0;
-      margin: 6px 0 10px;
-      background: url('assets/backgrounds/article-page-pop-up/dotted-lines.png') 50% 50%;
+      padding: 18px 0;
+      margin: 4px 0 6px;
+      background: url('assets/backgrounds/article-page-pop-up/dotted-lines.png') 50% 50%/200% 100% no-repeat;
 
       p:first-child, p:last-child {
          margin: 0;
@@ -17968,7 +17971,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .decline-sign-up {
-      margin: 7px 0;
+      margin: 6px 0;
    }
 
    .sign-up-form {
@@ -17989,13 +17992,17 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-header {
-      font-size: 37px;
+      font-size: 43px;
       margin: 0.5em 0;
       margin: 0;
       max-width: none;
       padding: 0;
-      line-height: normal;
+      line-height: 1;
       text-transform: none;
+
+      strong {
+         font-family: 'ProximaNovaSbold', sans-serif;
+      }
    }
 
    .sign-up-header.yellow-color {
@@ -18032,18 +18039,24 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       }
 
       .sign-up-content {
-         padding-top: 0;
+         padding-top: 4px;
       }
 
       .sign-up-form {
+         .email-input, .sign-up-button {
+            font-size: 30px;
+         }
+
          .email-input {
-            width: 80%;
+            display: block;
+            width: 50%;
+            margin: 0 auto;
          }
 
          .sign-up-button {
-            width: 50%;
+            width: 36%;
             margin: 9px 0 0;
-            font-family: 'webfontregular';
+            font-family: 'ProximaNovaReg', sans-serif;
          }
       }
 
@@ -18056,16 +18069,16 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       }
 
       .sign-up-header {
-         font-size: 82px;
+         font-size: 88px;
       }
 
       .sign-up-header.yellow-color {
-         margin-top: -26px;
+         margin-top: -21px;
       }
 
-      .sub-text-large, .sub-text-medium, .sign-up-form .sign-up-button, .sign-up-form .email-input {
-         font-size: 36px;
-         line-height: 38px;
+      .sub-text-large, .sub-text-medium {
+         font-size: 37px;
+         line-height: 1.1;
       }
 
       .dotted-lines {
@@ -18111,7 +18124,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       margin: 0;
       max-width: none;
       padding: 0;
-      line-height: normal;
+      line-height: 1;
       text-transform: none;
    }
 
@@ -18167,7 +18180,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          .sign-up-button {
             font-weight: normal;
             margin: 0 0 0 10px;
-            font-family: 'webfontregular';
+            font-family: 'ProximaNovaReg', sans-serif;
          }
       }
 
@@ -18178,7 +18191,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 
       .sign-up-copy {
          margin: 18px;
-         line-height: normal;
+         line-height: 1;
       }
 
       .sign-up-header {
