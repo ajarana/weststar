@@ -17723,19 +17723,18 @@ $temp-margins: 0 auto;
 
 // Sign up forms
 .email-sign-up {
-   font-family: 'Arimo', sans-serif!important;
    color: #333;
    margin: 0;
    margin: $temp-margins;
 
    strong {
       font-weight: bold;
-      font-family: 'Arimo', sans-serif!important;
+      font-family: 'webfontbold', sans-serif!important;
    }
 
-   h1, h2, h3, h4, h5, h6, p {
+   h1, h2, h3, h4, h5, h6, p, input, button, label {
       line-height: normal;
-      font-family: 'Arimo', sans-serif!important;
+      font-family: 'webfontregular', sans-serif!important;
    }
 
    .sign-up-copy {
@@ -17763,6 +17762,10 @@ $temp-margins: 0 auto;
          -webkit-appearance: none;
          -moz-appearance: none;
          appearance: none;
+      }
+
+      .email-input {
+         border: 1px solid #c1c1c1
       }
 
       .sign-up-button {
@@ -17840,12 +17843,10 @@ $temp-margins: 0 auto;
    width: 300px;
    height: 300px;
 
-   display: flex;
-   align-items: flex-end;
-   justify-content: center;
-
    .sign-up-content {
       max-width: 70%;
+      margin: 0 auto;
+      padding-top: 155px;
    }
 
    .sign-up-copy {
@@ -17861,16 +17862,13 @@ $temp-margins: 0 auto;
    width: 100%;
    height: 208px;
 
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
    #kimHeart {
       display: none;
+      float: left;
    }
 
    .sign-up-header {
-      font-size: 27px;
+      font-size: 28px;
       margin: 0;
    }
 
@@ -17881,7 +17879,7 @@ $temp-margins: 0 auto;
    }
 
    .sign-up-content {
-      padding: 0 20px;
+      padding: 15px 20px 0;
    }
 
    .sign-up-form {
@@ -17902,6 +17900,10 @@ $temp-margins: 0 auto;
 
       .email-sign-up-wrapper {
          display: flex;
+      }
+
+      .sign-up-content {
+         padding: 9px 20px 0;
       }
 
       .sign-up-form {
@@ -17926,7 +17928,9 @@ $temp-margins: 0 auto;
 
       .sign-up-content {
          max-width: 70%;
-         margin: 5px 6px 7px;
+         // margin: 5px 6px 7px;
+         margin-left: 212px;
+         padding-top: 9px;
       }
 
       #kimHeart {
@@ -17945,7 +17949,10 @@ $temp-margins: 0 auto;
    background-image: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
    width: 320px;
    height: 300px;
-   align-items: flex-end;
+
+   .sign-up-content {
+      padding-top: 13px;
+   }
 
    .dotted-lines {
       padding: 14px 0;
@@ -17979,7 +17986,7 @@ $temp-margins: 0 auto;
    }
 
    .sign-up-header {
-      font-size: 35px;
+      font-size: 37px;
       margin: 0.5em 0;
       margin: 0;
    }
@@ -17996,25 +18003,23 @@ $temp-margins: 0 auto;
    @media (min-width: $temp-media-query) {
       width: 850px;
       height: 425px;
-      align-items: center;
 
       .line-break {
          width: auto;
       }
 
-      .sign-up-form {
-         // .sign-up-button, .email-input {
-         //    font-size: 28px;
-         //    line-height: 32px;
-         // }
+      .sign-up-content {
+         padding-top: 0;
+      }
 
+      .sign-up-form {
          .email-input {
             width: 80%;
          }
 
          .sign-up-button {
             width: 50%;
-            margin: 14px 0 0;
+            margin: 9px 0 0;
          }
       }
 
@@ -18027,19 +18032,19 @@ $temp-margins: 0 auto;
       }
 
       .sign-up-header {
-         font-size: 70px;
+         font-size: 82px;
       }
 
       .sign-up-header.yellow-color {
          margin-top: -26px;
       }
 
-      .sub-text-large, .sub-text-medium {
-         font-size: 34px;
+      .sub-text-large, .sub-text-medium, .sign-up-form .sign-up-button, .sign-up-form .email-input {
+         font-size: 36px;
       }
 
       .dotted-lines {
-         padding: 5px 0 15px;
+         padding: 3px 0 15px;
          background: none;
       }
    }
@@ -18051,20 +18056,35 @@ $temp-margins: 0 auto;
    background: url('assets/backgrounds/home-page-pop-up/homepage-popup-background.jpg')50% 50%/cover;
    text-align: center;
 
+   .sign-up-content {
+      padding-top: 14px;
+      margin: 0 auto;
+   }
+
+   #phoneAndDots {
+      background: url('assets/backgrounds/home-page-pop-up/mobile-phone-and-dots.jpg') 7px 0;
+      width: 320px;
+      height: 85px;
+   }
+
    .white-shadow {
+      position: relative;
+      z-index: 1;
       background-image: url('assets/backgrounds/home-page-pop-up/white-shadow.png');
       background-position: 50% 66%;
       padding-top: 6px;
+      margin-top: -5px;
    }
 
    .sign-up-header {
       font-size: 27px;
+      margin: 0;
    }
 
    .sign-up-copy {
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 5px 0 6px;
+      font-size: 15px;
+      line-height: 1.4;
+      margin: 5px 0 4px;
    }
 
    .sign-up-form {
@@ -18076,6 +18096,7 @@ $temp-margins: 0 auto;
       .sign-up-button {
          font-weight: bold;
          width: 50%;
+         margin: 8px 0 6px;
       }
    }
 
@@ -18083,15 +18104,26 @@ $temp-margins: 0 auto;
       width: 850px;
       height: 425px;
 
+      #phoneAndDots {
+         background: url('assets/backgrounds/home-page-pop-up/phone-and-dots.jpg');
+         margin-left: 90px;
+         width: 445px;
+         height: 185px;
+      }
+
+      .sign-up-content {
+         padding-top: 20px;
+         width: 700px;
+      }
+
       .white-shadow {
          background-position: 50% 65%;
+         margin-top: -17px;
       }
 
       .sign-up-form {
-         // .sign-up-button, .email-input {
-         //    font-size: 24px;
-         //    line-height: 32px;
-         // }
+         width: 91%;
+         margin: 0 auto;
 
          .sign-up-button {
             font-weight: normal;
@@ -18099,20 +18131,23 @@ $temp-margins: 0 auto;
          }
       }
 
+      .sign-up-copy, .sign-up-form .sign-up-button, .sign-up-form .email-input {
+         font-size: 25px;
+      }
+
       .sign-up-copy {
          margin: 18px;
-         font-size: 24px;
          line-height: normal;
       }
 
       .sign-up-header {
-         font-size: 58px;
+         font-size: 57px;
          letter-spacing: -2px;
       }
 
       .email-sign-up-wrapper {
          display: flex;
-         margin-bottom: 18px;
+         margin-bottom: 10px;
       }
 
       .line-break {

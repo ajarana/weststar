@@ -11,6 +11,41 @@
 
       <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
+      <style>
+      @font-face {
+          font-family: 'webfontbold';
+          src: url('proximanova-boldweb-webfont.woff2') format('woff2'),
+               url('proximanova-boldweb-webfont.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+
+      }
+
+
+
+
+      @font-face {
+          font-family: 'webfontregular';
+          src: url('proximanova-regweb-webfont.woff2') format('woff2'),
+               url('proximanova-regweb-webfont.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+
+      }
+
+
+
+
+      @font-face {
+          font-family: 'webfontsemibold';
+          src: url('proximanova-sboldweb-webfont.woff2') format('woff2'),
+               url('proximanova-sboldweb-webfont.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+
+      }
+      </style>
+
    </head>
 
    <body style="display: flex; justify-content: center; align-items: center; margin: 0!important; font-family: 'Arimo',sans-serif!important ">
@@ -19,15 +54,17 @@
       </header> -->
 
       <main style="padding: 20px; width: 100%; font-family: 'Arimo',sans-serif!important">
-         <!-- PROTOTYPING -->
+
+
          <figure class="email-sign-up static-newsletter-sign-up">
             <div class="sign-up-content">
                <p class="sign-up-copy">Breaking news, tech trends, helpful tips, and more.</p>
-               <form class="sign-up-form">
-                  <input class="email-input" type="text" placeholder="Enter your email" name="email_entry_field">
+               <form class="newsletter-subscribe-form sign-up-form">
+                  <input class="newsletter-subscribe-email email-input" type="text" placeholder="Enter your email" name="email_entry_field">
                   <button class="sign-up-button" type="submit"><strong>Sign me up</strong></button>
-                  <!-- YELLOWS: lighter - #fccd3b, darker - #EFB926 -->
                </form>
+               <div class="newsletter-subscribe-spinner"></div>
+               <div class="newsletter-subscribe-response"></div>
             </div>
          </figure>
 
@@ -45,24 +82,27 @@
                   Sign up for my newsletters today and join the 3.6 million people who are already getting the latest tech news right in their inbox.</p>
                </section>
 
-               <form class="sign-up-form">
+               <form class="newsletter-subscribe-form sign-up-form">
                   <div class="email-sign-up-wrapper">
-                     <input class="email-input" type="text" placeholder="Enter your email" name="email_entry_field">
+                     <input class="newsletter-subscribe-email email-input" type="text" placeholder="Enter your email" name="email_entry_field">
                      <button class="sign-up-button" type="submit"><strong>Sign me up</strong></button>
                   </div>
                </form>
+
+               <div class="newsletter-subscribe-spinner"></div>
+               <div class="newsletter-subscribe-response"></div>
             </div>
          </figure>
 
          <br>
          <br>
 
-         <figure class="email-sign-up article-page-pop-up flex-align-center">
-            <div class="flex-align-center x-icon-wrapper">
+         <figure class="email-sign-up article-page-pop-up">
+            <div class="modal-close flex-align-center x-icon-wrapper">
                <div id="top-bar" class="bar"></div>
                <div id="bottom-bar" class="bar"></div>
             </div>
-            <div>
+            <div class="sign-up-content">
                <section>
                   <hgroup>
                      <h2 class="sign-up-header"><strong>Get more of this</strong></h2>
@@ -77,40 +117,49 @@
                   </div>
                </section>
 
-               <form class="sign-up-form jumbo-sign-up-form">
-                  <input class="email-input" type="text" placeholder="Enter your email" name="email_entry_field">
+               <form class="newsletter-subscribe-form sign-up-form jumbo-sign-up-form">
+                  <input class="newsletter-subscribe-email email-input" type="text" placeholder="Enter your email" name="email_entry_field">
                   <button class="sign-up-button" type="submit"><strong>Sign me up</strong></button>
                   <div class="flex-align-center decline-sign-up">
-                     <input class="checkbox" type="checkbox" id="checkBoxOne">
+                     <input class="opt-out-box checkbox" type="checkbox" id="checkBoxOne">
                      <label class="checkbox-label" for="checkBoxOne">No, I do not want to stay up-to-date.</label>
                   </div>
                </form>
+
+               <div class="newsletter-subscribe-spinner"></div>
+               <div class="newsletter-subscribe-response"></div>
             </div>
          </figure>
 
          <br>
          <br>
 
-         <figure class="email-sign-up home-page-pop-up flex-align-center">
-            <div>
+         <figure class="email-sign-up home-page-pop-up">
+            <div class="sign-up-content">
                <section>
                   <h2 class="sign-up-header"><strong>TECH <span class="sign-up-light-blue">ON YOUR TIME</span></strong></h2>
+
+                  <div id="phoneAndDots"></div>
+
                   <div class="white-shadow">
                      <p class="sign-up-copy"><strong>3.6 million already receive my newsletters. <span class="line-break sign-up-light-blue">Why don’t you?</span></strong></p>
                   </div>
                </section>
 
-               <form class="sign-up-form jumbo-sign-up-form">
+               <form class="newsletter-subscribe-form sign-up-form jumbo-sign-up-form">
                   <div class="email-sign-up-wrapper">
-                     <input class="email-input" type="text" placeholder="Enter your email" name="email_entry_field">
+                     <input class="newsletter-subscribe-email email-input" type="text" placeholder="Enter your email" name="email_entry_field">
                      <button class="sign-up-button" type="submit"><strong>Sign me up</strong></button>
                   </div>
 
                   <div class="flex-align-center decline-sign-up">
-                     <input class="checkbox" type="checkbox" id="checkBoxTwo">
+                     <input class="opt-out-box checkbox" type="checkbox" id="checkBoxTwo">
                      <label class="checkbox-label" for="checkBoxTwo">No, I do not want to stay up-to-date.</label>
                   </div>
                </form>
+
+               <div class="newsletter-subscribe-spinner"></div>
+               <div class="newsletter-subscribe-response"></div>
             </div>
          </figure>
 
