@@ -17763,7 +17763,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          width: 100%;
          font-size: 15px;
          border-radius: 4px;
-         line-height: 18px;
          line-height: 1.1;
          text-align: center;
          padding: 8px 15px;
@@ -18101,7 +18100,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    #phoneAndDots {
-      background: url('assets/backgrounds/home-page-pop-up/mobile-phone-and-dots.jpg') 15px 0;
+      background: url('assets/backgrounds/home-page-pop-up/mobile-phone-and-dots.jpg') -3px 0;
       width: 320px;
       height: 85px;
    }
@@ -18120,7 +18119,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-header {
-      font-size: 27px;
+      font-size: 31px;
       margin: 0;
       max-width: none;
       padding: 0;
@@ -18146,7 +18145,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       }
 
       .sign-up-button {
-         font-weight: bold;
+         font-family: 'ProximaNovaSbold', sans-serif;
          width: 50%;
          margin: 8px 0 6px;
       }
@@ -18178,9 +18177,8 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          margin: 0 auto;
 
          .sign-up-button {
-            font-weight: normal;
-            margin: 0 0 0 10px;
             font-family: 'ProximaNovaReg', sans-serif;
+            margin: 0 0 0 10px;
          }
       }
 
