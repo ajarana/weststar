@@ -17826,7 +17826,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    color: white;
    background: url('assets/backgrounds/bottom-article-sign-up/heart-background.jpg');
    width: 100%;
-   height: 208px;
+   max-height: 208px;
 
    #kimHeart {
       display: none;
@@ -17838,25 +17838,27 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-header {
-      font-size: 28px;
+      font-size: 32px;
       margin: 0;
    }
 
    .sign-up-copy {
       margin-top: 0;
       font-size: 13px;
-      max-width: 500px;
+      max-width: 480px;
+      line-height: 1.3;
    }
 
    .sign-up-content {
-      padding: 15px 20px 0;
+      padding: 10px 20px 0;
    }
 
    .sign-up-form {
       text-align: center;
 
       .sign-up-button {
-         margin-bottom: 5px;
+         // margin-bottom: 5px;
+         margin: 10px 0;
          width: 50%;
       }
    }
