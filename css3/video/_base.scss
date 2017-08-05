@@ -1,0 +1,208 @@
+@import "temp-watch-page";
+@import "search-results-page";
+
+#admin-tools {
+  margin: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  background: #515151;
+  border-radius: 2px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#admin-tools form {
+  margin: 8px 0 0 0;
+}
+
+#admin-tools p,
+#admin-tools div {
+  margin: 0;
+  display: inline-block;
+}
+
+#admin-tools a {
+  color: #a1a1a1;
+}
+
+#admin-tools a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#admin-tools input,
+#admin-tools select {
+  display: inline-block;
+  width: auto;
+  color: #515151;
+  vertical-align: middle;
+}
+
+#admin-tools input {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#admin-tools input:hover {
+  background: #efefef;
+}
+
+.square-ad--neg-margin {
+  margin: -16px auto 0 auto;
+  text-align: center;
+  padding: 10px 0;
+
+  @media screen and (min-width: 1000px) {
+    padding: 0 0 20px 0;
+  }
+}
+
+.square-ad--latest-video {
+  margin: 0 auto !important;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed $light-gray-border;
+
+  @media screen and (min-width: 680px) and (max-width: 999px) {
+    border: none;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: 20px 0;
+  }
+}
+
+.square-ad--neg-margin div,
+.square-ad--latest-video div {
+  margin: auto;
+}
+
+.sidebar-latest-videos {
+  margin: 0 0 0 -10px;
+  @include calc('width', '100% + 20px');
+
+  @media screen and (min-width: 680px) and (max-width: 999px) {
+    @include calc('width', '100% + 20px');
+    font-size: 0;
+    line-height: 0;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin: 0 0 -30px -34px;
+    @include calc('width', '100% + 68px');
+  }
+
+  h2 {
+    @include proxima-nova-sbold(16, 16);
+    margin: 10px 0 0 20px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1000px) {
+      margin: 0 0 0 20px;
+    }
+  }
+
+  &__video {
+    border-bottom: 1px dashed $light-gray-border;
+
+    @media screen and (min-width: 680px) and (max-width: 999px) {
+      margin: 10px;
+      display: inline-block;
+      vertical-align: top;
+      @include calc('width', '33.333% - 20px');
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      display: block;
+      padding: 10px 20px;
+      color: $font-color;
+      font-size: 0;
+      line-height: 0;
+
+      @media screen and (min-width: 680px) and (max-width: 999px) {
+        color: $font-color;
+        padding: 0;
+      }
+
+      @media screen and (min-width: 1000px) {
+        padding: 20px;
+      }
+    }
+
+    figure {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 130px;
+      margin: 0 14px 0 0;
+      padding: 0;
+      font-size: 0;
+      line-height: 0;
+
+      @media screen and (min-width: 680px) and (max-width: 999px) {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        border: 1px solid $light-gray-border;
+
+        @media screen and (min-width: 680px) and (max-width: 999px) {
+          width: 100%;
+          border: none;
+          height: auto;
+        }
+      }
+
+      i {
+        position: absolute;
+        bottom: 2px;
+        right: 6px;
+        font-size: 40px;
+        font-size: 4rem;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+        @media screen and (min-width: 680px) and (max-width: 999px) {
+          font-size: 60px;
+          font-size: 6rem;
+        }
+      }
+    }
+
+    h3 {
+      display: inline-block;
+      vertical-align: top;
+      @include proxima-nova-sbold(16, 20);
+      margin: 0;
+      padding: 0;
+      @include calc('width', '100% - 144px');
+
+      @media screen and (min-width: 680px) and (max-width: 999px) {
+        @include proxima-nova-sbold(16, 20);
+        margin: 6px 0 0 0;
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.pager-info {
+  display: block;
+  margin: 0 0 14px 0;
+  text-align: right;
+}
+
+.komando-results {
+  margin: 14px 0 0 0;
+}

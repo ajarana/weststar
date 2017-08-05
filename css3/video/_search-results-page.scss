@@ -1,0 +1,77 @@
+.wrapper--videos-search-results {
+
+  .wrapper__left-content {
+    padding: 10px;
+    position: relative;
+
+    @media screen and (min-width: 1000px) {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      position: relative;
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .search-results-text {
+      color: #4d525d;
+      display: table-cell;
+      @include proxima-nova-reg(15, 18);
+      vertical-align: top;
+
+      h3 {
+        @include proxima-nova-sbold(20, 20);
+        margin: 0 0 10px 0;
+
+        a {
+          color: #42494c;
+          text-decoration: none;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .results-header {
+      display: inline-block;
+
+      h1 {
+        display: inline-block;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin: 0;
+      }
+    }
+
+    .more-video-results-btn {
+      cursor: pointer;
+      display: block;
+      margin: 10px 0 0 0;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+      padding: 0 20px;
+      background: #0a88ff;
+      color: #ffffff;
+      border-radius: 3px;
+      @include transition(background .2s);
+
+      &:hover {
+        background: #2e43ff;
+      }
+    }
+  }
+
+  .wrapper__right-sidebar {
+    padding: 10px;
+    position: relative;
+
+    @media screen and (min-width: 1000px) {
+      width: 370px;
+      height: 100%;
+      padding: 30px 34px;
+      border-left: 2px solid #e6e6e6;
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+}

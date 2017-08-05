@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900');
+
+@font-face {
+	font-family: 'ProximaNovaXbold';
+	src: url('../fonts/ProximaNova-XboldWeb.eot');
+	src: url('../fonts/ProximaNova-XboldWeb.eot') format('embedded-opentype'), url('../fonts/ProximaNova-XboldWeb.woff'e) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaReg';
+	src: url('../fonts/ProximaNova-RegWeb.eot');
+	src: url('../fonts/ProximaNova-RegWeb.eot') format('embedded-opentype'), url('../fonts/ProximaNova-RegWeb.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaSbold';
+	src: url('../fonts/ProximaNova-SboldWeb.eot');
+	src: url('../fonts/ProximaNova-SboldWeb.eot') format('embedded-opentype'), url('../fonts/ProximaNova-SboldWeb.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaBlack';
+	src: url('../fonts/ProximaNova-BlackWeb.eot');
+	src: url('../fonts/ProximaNova-BlackWeb.eot') format('embedded-opentype'), url('../fonts/ProximaNova-BlackWeb.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaLight';
+	src: url('../fonts/ProximaNova-LightWeb.eot');
+	src: url('../fonts/ProximaNova-LightWeb.eot') format('embedded-opentype'), url('../fonts/ProximaNova-LightWeb.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/ProximaNova-BoldWeb.eot');
+	src: url('../fonts/ProximaNova-BoldWeb.eot') format('embedded-opentype'), url('../fonts/ProximaNova-BoldWeb.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ComingSoonRegular';
+	src: url('../fonts/comingsoon.eot');
+	src: url('../fonts/comingsoon.eot') format('embedded-opentype'), url('../fonts/comingsoon.woff') format('woff'), url('../fonts/comingsoon.ttf') format('truetype'), url('../fonts/comingsoon.svg#ComingSoonRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin proxima-nova-xbold($size, $height) {
+	font: $size+px/$height+px 'ProximaNovaXbold', sans-serif;
+	font: ($size/10)+rem/($height/10)+rem 'ProximaNovaXbold', sans-serif; 
+}
+
+@mixin proxima-nova-reg($size, $height) {
+	font: $size+px/$height+px 'ProximaNovaReg', sans-serif;
+	font: ($size/10)+rem/($height/10)+rem 'ProximaNovaReg', sans-serif; 
+}
+
+@mixin proxima-nova-sbold($size, $height) {
+	font: $size+px/$height+px 'ProximaNovaSbold', sans-serif;
+	font: ($size/10)+rem/($height/10)+rem 'ProximaNovaSbold', sans-serif; 
+}
+
+@mixin proxima-nova-black($size, $height) {
+	font: $size+px/$height+px 'ProximaNovaBlack', sans-serif;
+	font: ($size/10)+rem/($height/10)+rem 'ProximaNovaBlack', sans-serif; 
+}
+
+@mixin proxima-nova-light($size, $height) {
+	font: $size+px/$height+px 'ProximaNovaLight', sans-serif;
+	font: ($size/10)+rem/($height/10)+rem 'ProximaNovaLight', sans-serif; 
+}
+
+@mixin proxima-nova-bold($size, $height) {
+	font: $size+px/$height+px 'ProximaNovaBold', sans-serif;
+	font: ($size/10)+rem/($height/10)+rem 'ProximaNovaBold', sans-serif; 
+}

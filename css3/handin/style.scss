@@ -17722,13 +17722,13 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    margin: 0 auto;
 
    strong {
-      font-family: 'webfontbold', sans-serif;
+      font-family: 'ProximaNovaBold', sans-serif;
    }
 
    h1, h2, h3, h4, h5, h6, p, input, button, label {
       color: #333;
       line-height: normal;
-      font-family: 'webfontregular', sans-serif;
+      font-family: 'ProximaNovaReg', sans-serif;
    }
 
    input::-webkit-input-placeholder {
@@ -17783,7 +17783,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          border: 1px solid #fccd3b;
          margin: 8px 0 10px;
 
-         font-family: 'webfontsemibold';
+         font-family: 'ProximaNovaSbold', sans-serif;
       }
    }
 
@@ -17881,13 +17881,12 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 
       .sign-up-form {
          .email-input {
-            flex-basis: 52%;
+            flex-basis: 55%;
             margin-right: 15px;
             text-align: left;
          }
          .sign-up-button {
-            flex-basis: 28%;
-            max-width: 170px;
+            flex-basis: 30%;
             margin: 0;
          }
       }
@@ -17910,14 +17909,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 }
 
-.newsletter-subscribe-modal .modal-window.article-page-pop-up, .newsletter-subscribe-modal .modal-window.home-page-pop-up {
-   width: 320px;
-   height: 300px;
-   margin: 0 auto;
-   left: 0;
-   padding: 0;
-}
-
 .newsletter-subscribe-modal .modal-window.article-page-pop-up {
    position: relative;
    color: white;
@@ -17925,6 +17916,12 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
    background-image: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
+   width: 320px;
+   height: 300px;
+   margin: 0 auto;
+   left: 0;
+   padding: 0;
+   color: #333;
 
    .sign-up-content {
       padding-top: 13px;
@@ -18052,7 +18049,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          .sign-up-button {
             width: 50%;
             margin: 9px 0 0;
-            font-family: 'webfontregular';
+            font-family: 'ProximaNovaReg', sans-serif;
          }
       }
 
@@ -18091,6 +18088,12 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    background: url('assets/backgrounds/home-page-pop-up/homepage-popup-background.jpg')50% 50%/cover;
    text-align: center;
 
+   width: 320px;
+   height: 300px;
+   margin: 0 auto;
+   left: 0;
+   padding: 0;
+
    .sign-up-content {
       padding-top: 14px;
       margin: 0 auto;
@@ -18111,11 +18114,8 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       margin-top: -5px;
    }
 
-   .sign-up-header, .sign-up-copy {
-      color: #333;
-   }
-
    .sign-up-header {
+      color: #333;
       font-size: 27px;
       margin: 0;
       max-width: none;
@@ -18129,6 +18129,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-copy {
+      color: #333;
       font-size: 15px;
       line-height: 1.4;
       margin: 5px 0 4px;
@@ -18176,7 +18177,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          .sign-up-button {
             font-weight: normal;
             margin: 0 0 0 10px;
-            font-family: 'webfontregular';
+            font-family: 'ProximaNovaReg', sans-serif;
          }
       }
 

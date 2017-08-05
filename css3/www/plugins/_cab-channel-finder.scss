@@ -1,0 +1,215 @@
+.channel-finder-wrapper {
+  max-width: 1000px;
+  margin: auto;
+
+  .channel-finder {
+    font-size: 0;
+    line-height: 0;
+
+    &__container {
+      padding: 8px 12px;
+      position: relative;
+      overflow-y: auto;
+      max-height: 400px;
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+
+      .channel-list {
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+        @include proxima-nova-reg(16, 36);
+
+        .channel-list-item {
+          display: table-row;
+
+          &:nth-child(even) {
+            background: #ededee;
+          }
+
+          &.channel-list-header {
+            border-bottom: 2px solid #c0c0c0;
+            @include proxima-nova-reg(12, 36);
+          }
+
+          &__network,
+          &__station,
+          &__channel,
+          &__strength,
+          &__band,
+          &__heading,
+          &__distance {
+            display: table-cell;
+            position: relative;
+          }
+
+          &__network {
+            padding: 0 0 0 6px;
+
+            img {
+              max-height: 26px;
+              width: auto;
+              vertical-align: middle;
+            }
+          }
+
+          &__channel,
+          &__band {
+            text-align: center;
+            width: 130px;
+          }
+
+          &__strength {
+            width: 80px;
+          }
+
+          &__heading {
+            width: 240px;
+          }
+
+          &__distance {
+            width: 160px;
+          }
+
+          .strength-wrapper {
+            position: absolute;
+            top: 5px;
+            left: 4px;
+
+            &__bar {
+              width: 14px;
+              height: 10px;
+              border: 1px solid #cbcbcb;
+              margin: 0 3px 0 0;
+              display: inline-block;
+
+              &:nth-child(1) {
+                height: 10px;
+              }
+
+              &:nth-child(2) {
+                height: 15px;
+              }
+
+              &:nth-child(3) {
+                height: 20px;
+              }
+
+              &:nth-child(4) {
+                height: 25px;
+              }
+            }
+
+            &.strong {
+
+              .strength-wrapper__bar {
+                background: #6cbe45;
+              }
+            }
+
+            &.moderate {
+
+              .strength-wrapper__bar {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                  background: #6cbe45;
+                }
+              }
+            }
+
+            &.weak {
+
+              .strength-wrapper__bar {
+
+                &:nth-child(1) {
+                  background: #97be43;
+                }
+
+                &:nth-child(2) {
+                  background: #e4d002;
+                }
+              }
+            }
+
+            &.no {
+
+              .strength-wrapper__bar {
+
+                &:nth-child(1) {
+                  background: #be2621;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .channel-list-guide {
+        display: block;
+        padding: 8px;
+        @include proxima-nova-reg(14, 16);
+        text-decoration: none;
+        color: #ffffff;
+        background: #6cbe45;
+        border-radius: 3px;
+        text-align: center;
+      }
+    }
+
+    &__map {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      height: 180px;
+      line-height: 16px;
+      font-size: 16px;
+    }
+  }
+}
+
+.channel-finder-disclaimer {
+  font-size: 13px;
+  line-height: 18px;
+  font-style: italic;
+  padding: 18px;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  color: #a6a6a6;
+}
+
+.channel-finder-loader {
+  text-align: center;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.channel-finder-invalid {
+
+  input {
+    text-align: center;
+    @include calc('width', '100% - 200px');
+    padding: 0;
+    margin: 0;
+    border: 1px solid #9e9e9e;
+  }
+
+  button {
+    display: inline-block;
+    background: #9e9e9e;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    width: 200px;
+    height: 40px;
+    @include transition('background .2s');
+
+    &:hover {
+      background: #b4b4b4;
+    }
+  }
+}

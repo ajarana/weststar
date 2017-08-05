@@ -1,0 +1,149 @@
+.comparison-chart-outer-wrapper {
+  visibility: hidden;
+  @media screen and (max-width:600px) {
+    margin-right: -42px;
+    margin-left: -20px;
+  }
+}
+
+.comparison-chart-inner-wrapper {
+  width: 100%;
+  margin-left:0;
+  overflow: hidden;
+}
+
+.comparison-chart-left-column, .comparison-chart-right-column {
+  display: block;
+  float: left;
+}
+
+.comparison-chart-header-v2.left-col-cell {
+  display: inline-block;
+  padding: 10px;
+}
+
+.comparison-chart-header-v2.left-col-cell, .comparison-chart-header-v2.comparison-cell {
+  display: block;
+  float: left;
+  padding: 10px;
+}
+
+.comparison-chart-header-v2 {
+  background-color: #002a9a;
+  color: #ffffff;
+}
+
+.comparison-chart-right-row-container {
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.comparison-chart-header-row-container, .comparison-chart-left-column {
+  overflow: hidden;
+}
+
+.comparison-chart-left-cells {
+  overflow: hidden;
+  float: left;
+}
+
+.comparison-chart-row-v2.comparison-cell {
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  border-top: none;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+
+.comparison-chart-right-row-container .comparison-chart-row-v2.comparison-cell {
+  border-left: none;
+}
+
+img.comparison-chart-thumbnail-v2 {
+  max-width: 120px;
+}
+
+.comparison-chart-inner-wrapper {
+
+  @keyframes horzscroll {
+    0% {
+      right: 45%;
+    }
+    25% {
+      right: 40%;
+    }
+    75% {
+      right: 50%;
+    }
+    100% {
+      right: 45%;
+    }
+  }
+
+  @keyframes mobilehorzscroll {
+    0% {
+      left: 2%;
+    }
+    50% {
+      left: 4%;
+    }
+    100% {
+      left: 2%;
+    }
+
+  }
+
+  @keyframes vertscroll {
+    0% {
+      bottom: 40%;
+    }
+    25% {
+      bottom: 35%;
+    }
+    75% {
+      bottom: 45%;
+    }
+    100% {
+      bottom: 40%;
+    }
+  }
+
+  @keyframes mobilevertscroll {
+    0% {
+      top: 2%;
+    }
+    50% {
+      top: 4%;
+    }
+    100% {
+      top: 2%;
+    }
+  }
+
+  .gesture {
+    position: absolute;
+  }
+  .horz-gesture {
+    animation: horzscroll 5s infinite;
+    bottom: 10%;
+    right: 45%;
+  }
+  .vert-gesture {
+    animation: vertscroll 5s infinite;
+    bottom: 40%;
+    right: 10%;
+  }
+/*
+  @media screen and (max-width:600px) {
+    .horz-gesture {
+      animation: mobilehorzscroll 5s infinite;
+      top: 2%;
+      left: 2%;
+    }
+    .vert-gesture {
+      animation: mobilevertscroll 5s infinite;
+      top: 2%;
+      right: 2%;
+    }
+  }
+*/
+}

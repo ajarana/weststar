@@ -1,0 +1,239 @@
+.komshopnewslettersubscribe-modal {
+  background: rgba(0, 0, 0, .6);
+}
+
+.komshopnewslettersubscribe {
+  position: absolute;
+  width: 310px;
+  height: 425px;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -150px;
+  background: url('../img/shop/komshopnewslettersubscribe/bg.jpg') top center;
+
+  @media screen and (min-width: 1000px) {
+    width: 690px;
+    height: 520px;
+    margin: -260px 0 0 -345px;
+  }
+
+  .ksns-submit-banner {
+    text-align: right;
+    margin: 12px -8px 0 0;
+
+    @media screen and (min-width: 1000px) {
+      margin: 18px -16px 0 0;
+    }
+  }
+
+  .ksns-submit-title {
+    padding: 0 20px;
+    @include proxima-nova-reg(55, 45);
+    color: #001f5f;
+    text-align: center;
+
+    @media screen and (min-width: 1000px) {
+      @include proxima-nova-reg(80, 72);
+      letter-spacing: -3px;
+    }
+
+    span {
+      display: block;
+      @include proxima-nova-bold(22, 20);
+
+      @media screen and (min-width: 1000px) {
+        @include proxima-nova-bold(45, 45);
+      }
+    }
+  }
+
+  .ksns-submit-form {
+    padding: 12px 20px;
+    @include proxima-nova-reg(14, 18);
+    color: #808080;
+    text-align: center;
+
+    @media screen and (min-width: 1000px) {
+      float: left;
+      width: 430px;
+      @include proxima-nova-reg(20, 24);
+      padding: 20px 20px 20px 40px;
+    }
+
+    &__email {
+      position: relative;
+    }
+
+    &__error {
+      display: none;
+      position: absolute;
+      top: -54px;
+      background: #e62f2f;
+      color: #ffffff;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 4px;
+      left: 50%;
+      margin-left: -120px;
+
+      &:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: #e62f2f;
+        border-width: 10px;
+        margin-left: -10px;
+      }
+    }
+
+    &__submit {
+      margin: 10px 0;
+
+      button {
+        position: relative;
+        display: block;
+        width: 100%;
+        background: #38b5e6;
+        padding: 10px;
+        border-radius: 4px;
+        color: #ffffff;
+        text-transform: uppercase;
+        @include proxima-nova-bold(18, 18);
+        @include transition(background .2s);
+
+        i {
+          display: none;
+          position: absolute;
+          left: 20px;
+        }
+
+        @media screen and (min-width: 1000px) {
+          @include proxima-nova-bold(22, 22);
+          padding: 26px 20px;
+        }
+
+        &:hover {
+          background: #65d2fd;
+        }
+      }
+    }
+
+    &__close {
+      margin-bottom: 10px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    &__fine-print {
+      @include proxima-nova-reg(9, 10);
+      text-align: left;
+    }
+  }
+
+  .ksns-submit-kim {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 0;
+    font-size: 0;
+  }
+
+  .ksns-thanks-banner {
+    text-align: right;
+    margin: 12px -8px 0 0;
+
+    @media screen and (min-width: 1000px) {
+      margin: 18px -11px 0 0;
+    }
+  }
+
+  .ksns-thanks-title {
+    @include proxima-nova-sbold(18, 16);
+    text-align: center;
+    color: #666666;
+    padding: 0 20px;
+
+    @media screen and (min-width: 1000px) {
+      @include proxima-nova-sbold(28, 28);
+      padding: 0 60px;
+    }
+  }
+
+  .ksns-thanks-coupon {
+    display: block;
+    text-align: center;
+    border: 1px solid #666666;
+    margin: 10px 20px;
+    color: #001f5f;
+    @include proxima-nova-bold(45, 54);
+    background: url('../img/shop/komshopnewslettersubscribe/thanks-coupon-bg.png') top center;
+
+    @media screen and (min-width: 1000px) {
+      margin: 20px auto;
+      width: 340px;
+    }
+  }
+
+  .ksns-thanks-products {
+    padding: 0 10px;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+
+    @media screen and (min-width: 1000px) {
+      padding: 0 20px;
+    }
+
+    &__product {
+      display: inline-block;
+      width: 120px;
+      padding: 10px 20px;
+
+      @media screen and (min-width: 1000px) {
+        width: 160px;
+        padding: 10px;
+      }
+
+      &.hide-mobile {
+        display: none;
+
+        @media screen and (min-width: 1000px) {
+          display: inline-block;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .ksns-thanks-fine-print {
+    @include proxima-nova-reg(9, 10);
+    text-align: left;
+    color: #808080;
+    padding: 10px 20px;
+
+    @media screen and (min-width: 1000px) {
+      padding: 10px 30px;
+    }
+  }
+
+  .modal-close {
+    position: absolute;
+    top: -19px;
+    right: -17px;
+    cursor: pointer;
+    text-shadow: 0 0 8px rgba(0, 0, 0, .6);
+  }
+
+  .modal-close .fa-inverse {
+    color: #0989ff;
+    text-shadow: none;
+  }
+}

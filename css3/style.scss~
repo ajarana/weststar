@@ -1484,7 +1484,7 @@ ul.show-menu,
 
 .grid-item-kims-club {
   position: relative;
-//  background: #5422bf
+//  background: #5422bf 
 //  url('../img/kims-club-block-bg.jpg');
   min-width: 300px;
   min-height: 275px;
@@ -8702,16 +8702,11 @@ footer .copyright {
 .subscribe-modal .modal-window {
   left: calc(50% - 240px);
   left: -webkit-calc(50% - 240px);
-  top: calc(50% - 150px);
-  top: -webkit-calc(50% - 150px);
+  top: calc(50% - 120px);
+  top: -webkit-calc(50% - 120px);
   width: 480px;
     z-index: 30;
   min-height: 240px;
-
-  @media (min-width: 950px) {
-     top: calc(50% - 212px);
-     top: -webkit-calc(50% - 212px);
-  }
 }
 
 .newsletter-subscribe-modal .modal-window h2 {
@@ -17546,7 +17541,7 @@ input[type="checkbox"].following-inline-checkbox {
 }
 .listen-page-leadin {
     padding: 20px 0 10px 10px;
-}
+} 
 
 ul.page-numbers li {
   position: relative;
@@ -17629,7 +17624,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
     max-width: 900px;
     min-height: 150px;
     margin: 10px auto 0 auto;
-
+    
     .birthday-text {
         display: inline-block;
         width: 45%;
@@ -17669,7 +17664,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
     }
     @media screen and (max-width: 1000px) {
         min-height: 130px;
-
+        
         .birthday-text {
             padding: 10px 0 0 0;
         }
@@ -17677,7 +17672,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
     @media screen and (max-width: 700px) {
         width: 100%;
         max-width: 560px;
-
+        
         .birthday-text {
             padding: 0;
             width: 100%;
@@ -17705,512 +17700,11 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 }
 /* End Birthday Banner */
 
+
+
 .advertise-wrapper{
   line-height:0.8;
 }
-
-/* NEWSLETTER SIGN UP FORMS */
-
-.flex-align-center {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.email-sign-up {
-   color: #333;
-   margin: 0 auto;
-
-   strong {
-      font-family: 'webfontbold', sans-serif;
-   }
-
-   h1, h2, h3, h4, h5, h6, p, input, button, label {
-      color: #333;
-      line-height: normal;
-      font-family: 'webfontregular', sans-serif;
-   }
-
-   input::-webkit-input-placeholder {
-      color: #777;
-   }
-
-   input:-moz-placeholder {
-      color: #777;
-   }
-
-   input::-moz-placeholder {
-      color: #777;
-   }
-
-   input:-ms-input-placeholder {
-      color: #777;
-   }
-
-   .sign-up-copy {
-      margin: 0.6em 0;
-      font-size: 17px;
-   }
-
-   .line-break {
-      display: inline-block;
-      width: 100%;
-   }
-
-   .sign-up-form {
-      font-family: 'Arimo', sans-serif!important;
-      .email-input, .sign-up-button {
-         width: 100%;
-         font-size: 15px;
-         border-radius: 4px;
-         line-height: 18px;
-         text-align: center;
-         padding: 8px 15px;
-         height: auto;
-
-         -webkit-appearance: none;
-         -moz-appearance: none;
-         appearance: none;
-      }
-
-      .email-input {
-         border: 1px solid #c1c1c1
-      }
-
-      .sign-up-button {
-         color: #333;
-         background-color: #fccd3b;
-         border: 1px solid #fccd3b;
-         margin: 8px 0 10px;
-
-         font-family: 'webfontsemibold';
-      }
-   }
-
-   .checkbox {
-      width: 15px;
-      height: 15px;
-      margin: 0 5px 0 0;
-   }
-
-   .checkbox-label {
-      font-size: 13px;
-   }
-
-   @media (min-width: 950px) {
-      .jumbo-sign-up-form {
-         .email-input, .sign-up-button {
-            font-size: 24px;
-            line-height: 32px;
-         }
-      }
-   }
-}
-
-.static-newsletter-sign-up {
-   text-align: center;
-
-   background: url('assets/backgrounds/static-sign-up/300x300-fortune-cookie-background.jpg');
-   width: 300px;
-   height: 300px;
-
-   .sign-up-content {
-      max-width: 70%;
-      margin: 0 auto;
-      padding-top: 155px;
-   }
-
-   .sign-up-copy {
-      line-height: 1;
-   }
-}
-
-.bottom-article-sign-up {
-   color: white;
-   background: url('assets/backgrounds/bottom-article-sign-up/heart-background.jpg');
-   width: 100%;
-   height: 208px;
-
-   #kimHeart {
-      display: none;
-      float: left;
-   }
-
-   .sign-up-header, .sign-up-copy {
-      color: #fff;
-   }
-
-   .sign-up-header {
-      font-size: 28px;
-      margin: 0;
-   }
-
-   .sign-up-copy {
-      margin-top: 0;
-      font-size: 13px;
-      max-width: 500px;
-   }
-
-   .sign-up-content {
-      padding: 15px 20px 0;
-   }
-
-   .sign-up-form {
-      text-align: center;
-
-      .sign-up-button {
-         margin-bottom: 5px;
-         width: 50%;
-      }
-   }
-
-   @media (min-width: 576px) {
-      height: 125px;
-
-      .line-break {
-         width: auto;
-      }
-
-      .email-sign-up-wrapper {
-         display: flex;
-      }
-
-      .sign-up-content {
-         padding: 9px 20px 0;
-      }
-
-      .sign-up-form {
-         .email-input {
-            flex-basis: 52%;
-            margin-right: 15px;
-            text-align: left;
-         }
-         .sign-up-button {
-            flex-basis: 28%;
-            max-width: 170px;
-            margin: 0;
-         }
-      }
-   }
-
-   @media (min-width: 851px) {
-      width: 100%;
-
-      justify-content: flex-start;
-
-      .sign-up-content {
-         max-width: 70%;
-         margin-left: 212px;
-         padding-top: 9px;
-      }
-
-      #kimHeart {
-         display: inline;
-      }
-   }
-}
-
-.newsletter-subscribe-modal .modal-window.article-page-pop-up, .newsletter-subscribe-modal .modal-window.home-page-pop-up {
-   width: 320px;
-   height: 300px;
-   margin: 0 auto;
-   left: 0;
-   padding: 0;
-}
-
-.newsletter-subscribe-modal .modal-window.article-page-pop-up {
-   position: relative;
-   color: white;
-   text-align: center;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-
-   background-image: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
-
-   .sign-up-content {
-      padding-top: 13px;
-   }
-
-   .x-icon-wrapper {
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      right: 6px;
-      top: 6px;
-      cursor: pointer;
-
-      .bar {
-         width: 14px;
-         height: 2px;
-         background-color: white;
-      }
-
-      #top-bar {
-         margin-right: -14px;
-         transform: rotate(45deg);
-      }
-
-      #bottom-bar {
-         transform:rotate(135deg);
-      }
-   }
-
-   .dotted-lines {
-      padding: 14px 0;
-      margin: 6px 0 10px;
-      background: url('assets/backgrounds/article-page-pop-up/dotted-lines.png') 50% 50%;
-
-      p:first-child, p:last-child {
-         margin: 0;
-      }
-   }
-
-   .sub-text-large, .sub-text-medium {
-      color: #fff;
-   }
-
-   .sub-text-large {
-      font-size: 23px;
-      line-height: 0.9;
-   }
-   .sub-text-medium {
-      font-size: 17px;
-   }
-
-   .decline-sign-up {
-      margin: 7px 0;
-   }
-
-   .sign-up-form {
-      max-width: 87%;
-      margin: 0 auto;
-
-      .email-input {
-         margin: 0;
-      }
-
-      .sign-up-button {
-         margin: 7px 0 0;
-      }
-
-      .checkbox-label {
-         color: #fff;
-      }
-   }
-
-   .sign-up-header {
-      font-size: 37px;
-      margin: 0.5em 0;
-      margin: 0;
-      max-width: none;
-      padding: 0;
-      line-height: normal;
-      text-transform: none;
-   }
-
-   .sign-up-header.yellow-color {
-      color: #fccd3b;
-      margin-top: -8px;
-   }
-
-   .sign-up-copy {
-      font-size: 13px;
-      margin: 0;
-   }
-
-   @media (min-width: 950px) {
-      width: 850px;
-      height: 425px;
-
-      .x-icon-wrapper {
-         width: 22px;
-         height: 22px;
-         top: 11px;
-         right: 11px;
-
-         .bar {
-            width: 22px;
-         }
-
-         #top-bar {
-            margin-right: -22px;
-         }
-      }
-
-      .line-break {
-         width: auto;
-      }
-
-      .sign-up-content {
-         padding-top: 0;
-      }
-
-      .sign-up-form {
-         .email-input {
-            width: 80%;
-         }
-
-         .sign-up-button {
-            width: 50%;
-            margin: 9px 0 0;
-            font-family: 'webfontregular';
-         }
-      }
-
-      .checkbox-label {
-         font-size: 16px;
-      }
-
-      .decline-sign-up {
-         margin: 14px 0;
-      }
-
-      .sign-up-header {
-         font-size: 82px;
-      }
-
-      .sign-up-header.yellow-color {
-         margin-top: -26px;
-      }
-
-      .sub-text-large, .sub-text-medium, .sign-up-form .sign-up-button, .sign-up-form .email-input {
-         font-size: 36px;
-         line-height: 38px;
-      }
-
-      .dotted-lines {
-         padding: 3px 0 15px;
-         background: none;
-         margin: 6px 0 2px;
-      }
-   }
-}
-
-.newsletter-subscribe-modal .modal-window.home-page-pop-up {
-   width: 320px;
-   height: 300px;
-   background: url('assets/backgrounds/home-page-pop-up/homepage-popup-background.jpg')50% 50%/cover;
-   text-align: center;
-
-   .sign-up-content {
-      padding-top: 14px;
-      margin: 0 auto;
-   }
-
-   #phoneAndDots {
-      background: url('assets/backgrounds/home-page-pop-up/mobile-phone-and-dots.jpg') 15px 0;
-      width: 320px;
-      height: 85px;
-   }
-
-   .white-shadow {
-      position: relative;
-      z-index: 1;
-      background-image: url('assets/backgrounds/home-page-pop-up/white-shadow.png');
-      background-position: 50% 66%;
-      padding-top: 6px;
-      margin-top: -5px;
-   }
-
-   .sign-up-header, .sign-up-copy {
-      color: #333;
-   }
-
-   .sign-up-header {
-      font-size: 27px;
-      margin: 0;
-      max-width: none;
-      padding: 0;
-      line-height: normal;
-      text-transform: none;
-   }
-
-   .sign-up-header .light-blue, .sign-up-copy .light-blue {
-      color: #2ed2ff;
-   }
-
-   .sign-up-copy {
-      font-size: 15px;
-      line-height: 1.4;
-      margin: 5px 0 4px;
-   }
-
-   .sign-up-form {
-      .email-input {
-         text-align: left;
-         width: 89%;
-         margin: 0;
-      }
-
-      .sign-up-button {
-         font-weight: bold;
-         width: 50%;
-         margin: 8px 0 6px;
-      }
-   }
-
-   @media (min-width: 950px) {
-      width: 850px;
-      height: 425px;
-
-      #phoneAndDots {
-         background: url('assets/backgrounds/home-page-pop-up/phone-and-dots.jpg');
-         margin-left: 90px;
-         width: 445px;
-         height: 185px;
-      }
-
-      .sign-up-content {
-         padding-top: 20px;
-         width: 700px;
-      }
-
-      .white-shadow {
-         background-position: 50% 65%;
-         margin-top: -17px;
-      }
-
-      .sign-up-form {
-         width: 91%;
-         margin: 0 auto;
-
-         .sign-up-button {
-            font-weight: normal;
-            margin: 0 0 0 10px;
-            font-family: 'webfontregular';
-         }
-      }
-
-      .sign-up-copy, .sign-up-form .sign-up-button, .sign-up-form .email-input {
-         font-size: 25px;
-         line-height: 25px;
-      }
-
-      .sign-up-copy {
-         margin: 18px;
-         line-height: normal;
-      }
-
-      .sign-up-header {
-         font-size: 57px;
-         letter-spacing: -2px;
-      }
-
-      .email-sign-up-wrapper {
-         display: flex;
-         margin-bottom: 13px;
-      }
-
-      .line-break {
-         width: auto;
-      }
-
-      .checkbox-label {
-         font-size: 16px;
-      }
-   }
-}
-
-/* END OF NEWSLETTER SIGN UP FORMS */
 
 @import "common/header";
 @import "video/base";
