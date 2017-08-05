@@ -17722,13 +17722,13 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    margin: 0 auto;
 
    strong {
-      font-family: 'ProximaNovaBold', sans-serif;
+      font-family: 'webfontbold', sans-serif;
    }
 
    h1, h2, h3, h4, h5, h6, p, input, button, label {
       color: #333;
       line-height: normal;
-      font-family: 'ProximaNovaReg', sans-serif;
+      font-family: 'webfontregular', sans-serif;
    }
 
    input::-webkit-input-placeholder {
@@ -17758,7 +17758,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-form {
-      font-family: 'Arimo', sans-serif!important;
       .email-input, .sign-up-button {
          width: 100%;
          font-size: 15px;
@@ -17783,7 +17782,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          border: 1px solid #fccd3b;
          margin: 8px 0 10px;
 
-         font-family: 'ProximaNovaSbold', sans-serif;
+         font-family: 'webfontsemibold';
       }
    }
 
@@ -17795,15 +17794,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 
    .checkbox-label {
       font-size: 13px;
-   }
-
-   @media (min-width: 950px) {
-      .jumbo-sign-up-form {
-         .email-input, .sign-up-button {
-            font-size: 24px;
-            line-height: 32px;
-         }
-      }
    }
 }
 
@@ -17881,22 +17871,19 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 
       .sign-up-form {
          .email-input {
-            flex-basis: 55%;
+            flex-basis: 52%;
             margin-right: 15px;
             text-align: left;
          }
          .sign-up-button {
-            flex-basis: 30%;
+            flex-basis: 28%;
+            max-width: 170px;
             margin: 0;
          }
       }
    }
 
    @media (min-width: 851px) {
-      width: 100%;
-
-      justify-content: flex-start;
-
       .sign-up-content {
          max-width: 70%;
          margin-left: 212px;
@@ -17909,19 +17896,21 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 }
 
+.newsletter-subscribe-modal .modal-window.article-page-pop-up, .newsletter-subscribe-modal .modal-window.home-page-pop-up {
+   width: 320px;
+   height: 300px;
+   margin: 0 auto;
+   left: 0;
+   padding: 0;
+}
+
 .newsletter-subscribe-modal .modal-window.article-page-pop-up {
    position: relative;
    color: white;
    text-align: center;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
-   background-image: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
-   width: 320px;
-   height: 300px;
-   margin: 0 auto;
-   left: 0;
-   padding: 0;
-   color: #333;
+   background: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
 
    .sign-up-content {
       padding-top: 13px;
@@ -18049,7 +18038,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          .sign-up-button {
             width: 50%;
             margin: 9px 0 0;
-            font-family: 'ProximaNovaReg', sans-serif;
+            font-family: 'webfontregular';
          }
       }
 
@@ -18088,12 +18077,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    background: url('assets/backgrounds/home-page-pop-up/homepage-popup-background.jpg')50% 50%/cover;
    text-align: center;
 
-   width: 320px;
-   height: 300px;
-   margin: 0 auto;
-   left: 0;
-   padding: 0;
-
    .sign-up-content {
       padding-top: 14px;
       margin: 0 auto;
@@ -18114,8 +18097,11 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
       margin-top: -5px;
    }
 
-   .sign-up-header {
+   .sign-up-header, .sign-up-copy {
       color: #333;
+   }
+
+   .sign-up-header {
       font-size: 27px;
       margin: 0;
       max-width: none;
@@ -18129,7 +18115,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-copy {
-      color: #333;
       font-size: 15px;
       line-height: 1.4;
       margin: 5px 0 4px;
@@ -18177,7 +18162,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
          .sign-up-button {
             font-weight: normal;
             margin: 0 0 0 10px;
-            font-family: 'ProximaNovaReg', sans-serif;
+            font-family: 'webfontregular';
          }
       }
 

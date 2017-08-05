@@ -17758,7 +17758,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    .sign-up-form {
-      font-family: 'Arimo', sans-serif!important;
       .email-input, .sign-up-button {
          width: 100%;
          font-size: 15px;
@@ -17795,15 +17794,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 
    .checkbox-label {
       font-size: 13px;
-   }
-
-   @media (min-width: 950px) {
-      .jumbo-sign-up-form {
-         .email-input, .sign-up-button {
-            font-size: 24px;
-            line-height: 32px;
-         }
-      }
    }
 }
 
@@ -17894,10 +17884,6 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    }
 
    @media (min-width: 851px) {
-      width: 100%;
-
-      justify-content: flex-start;
-
       .sign-up-content {
          max-width: 70%;
          margin-left: 212px;
@@ -17924,7 +17910,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
    text-align: center;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
-   background-image: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
+   background: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
 
    .sign-up-content {
       padding-top: 13px;
