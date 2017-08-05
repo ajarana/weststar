@@ -146,7 +146,7 @@
          <figure class="email-sign-up home-page-pop-up">
             <div class="sign-up-content">
                <section>
-                  <h2 class="sign-up-header"><strong>TECH <span class="sign-up-light-blue">ON YOUR TIME</span></strong></h2>
+                  <h2 style="font-family: 'webfontregular', sans-serif!important;" id='h2' class="sign-up-header"><strong>TECH <span class="sign-up-light-blue">ON YOUR TIME</span></strong></h2>
 
                   <div id="phoneAndDots"></div>
 
@@ -171,6 +171,15 @@
                <div class="newsletter-subscribe-response"></div>
             </div>
          </figure>
+
+         <p id='test'></p>
+
+         <script>
+            var t = document.getElementById('h2');
+            var t2 = document.getElementById('test');
+
+            t2.innerHTML = t.style.fontFamily;
+         </script>
 
          <br>
          <br>
