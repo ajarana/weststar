@@ -48,10 +48,17 @@
 
    </head>
 
-   <body style="display: flex; justify-content: center; align-items: center; margin: 0!important; font-family: 'Arimo',sans-serif!important ">
+   <body id='body' style="display: flex; justify-content: center; align-items: center; margin: 0!important; font-family: 'Arimo',sans-serif!important ">
 
       <!-- <header>
       </header> -->
+      <!-- <p id='test'></p>
+      <script>
+         var t = document.getElementById('body');
+         var t2 = document.getElementById('test');
+
+         t2.innerHTML = t.style.fontFamily;
+      </script> -->
 
       <main style="padding: 20px; width: 100%; font-family: 'Arimo',sans-serif!important">
 
@@ -97,7 +104,8 @@
          <br>
          <br>
 
-         <figure class="email-sign-up article-page-pop-up">
+         <div class="modal subscribe-modal newsletter-subscribe-modal">
+         <figure class="modal-window email-sign-up article-page-pop-up">
             <div class="modal-close flex-align-center x-icon-wrapper">
                <div id="top-bar" class="bar"></div>
                <div id="bottom-bar" class="bar"></div>
@@ -117,7 +125,7 @@
                   </div>
                </section>
 
-               <form class="newsletter-subscribe-form sign-up-form jumbo-sign-up-form">
+               <form class="newsletter-subscribe-form sign-up-form">
                   <input class="newsletter-subscribe-email email-input" type="text" placeholder="Enter your email" name="email_entry_field">
                   <button class="sign-up-button" type="submit"><strong>Sign me up</strong></button>
                   <div class="flex-align-center decline-sign-up">
@@ -130,6 +138,7 @@
                <div class="newsletter-subscribe-response"></div>
             </div>
          </figure>
+         </div>
 
          <br>
          <br>
@@ -146,7 +155,7 @@
                   </div>
                </section>
 
-               <form class="newsletter-subscribe-form sign-up-form jumbo-sign-up-form">
+               <form class="newsletter-subscribe-form sign-up-form">
                   <div class="email-sign-up-wrapper">
                      <input class="newsletter-subscribe-email email-input" type="text" placeholder="Enter your email" name="email_entry_field">
                      <button class="sign-up-button" type="submit"><strong>Sign me up</strong></button>

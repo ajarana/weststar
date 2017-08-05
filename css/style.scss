@@ -8702,11 +8702,16 @@ footer .copyright {
 .subscribe-modal .modal-window {
   left: calc(50% - 240px);
   left: -webkit-calc(50% - 240px);
-  top: calc(50% - 120px);
-  top: -webkit-calc(50% - 120px);
+  top: calc(50% - 150px);
+  top: -webkit-calc(50% - 150px);
   width: 480px;
     z-index: 30;
   min-height: 240px;
+
+  @media (min-width: 950px) {
+     top: calc(50% - 212px);
+     top: -webkit-calc(50% - 212px);
+  }
 }
 
 .newsletter-subscribe-modal .modal-window h2 {
@@ -17700,7 +17705,7 @@ li.mobile-sub-toggle ul.mobile-sub-menu{
 }
 /* End Birthday Banner */
 
-$temp-media-query: 901px;
+$temp-media-query: 950px;
 $temp-margins: 0 auto;
 
 .flex-align-center {
@@ -17737,6 +17742,22 @@ $temp-margins: 0 auto;
       font-family: 'webfontregular', sans-serif!important;
    }
 
+   input::-webkit-input-placeholder {
+      color: #777;
+   }
+
+   input:-moz-placeholder { /* Firefox 18- */
+      color: #777;
+   }
+
+   input::-moz-placeholder {  /* Firefox 19+ */
+      color: #777;
+   }
+
+   input:-ms-input-placeholder {
+      color: #777;
+   }
+
    .sign-up-copy {
       margin: 0.6em 0;
       font-size: 17px;
@@ -17753,11 +17774,10 @@ $temp-margins: 0 auto;
          width: 100%;
          font-size: 15px;
          border-radius: 4px;
-         // line-height: 36px;
          line-height: 18px;
          text-align: center;
-         // padding: 0 15px;
          padding: 8px 15px;
+         height: auto;
 
          -webkit-appearance: none;
          -moz-appearance: none;
@@ -17776,34 +17796,10 @@ $temp-margins: 0 auto;
       }
    }
 
-   .x-icon-wrapper {
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      right: 6px;
-      top: 6px;
-      cursor: pointer;
-
-      .bar {
-         width: 14px;
-         height: 2px;
-         background-color: white;
-      }
-
-      #top-bar {
-         margin-right: -14px;
-         transform: rotate(45deg);
-      }
-
-      #bottom-bar {
-         transform:rotate(135deg);
-      }
-   }
-
    .checkbox {
       width: 15px;
       height: 15px;
-      margin-right: 5px;
+      margin: 0 5px 0 0;
    }
 
    .checkbox-label {
@@ -17811,21 +17807,6 @@ $temp-margins: 0 auto;
    }
 
    @media (min-width: $temp-media-query) {
-      .x-icon-wrapper {
-         width: 22px;
-         height: 22px;
-         top: 11px;
-         right: 11px;
-
-         .bar {
-            width: 22px;
-         }
-
-         #top-bar {
-            margin-right: -22px;
-         }
-      }
-
       .jumbo-sign-up-form {
          .email-input, .sign-up-button {
             font-size: 24px;
@@ -17940,18 +17921,45 @@ $temp-margins: 0 auto;
 }
 
 // pop-up sign-up
-.article-page-pop-up {
+.newsletter-subscribe-modal .modal-window.article-page-pop-up {
    position: relative;
    color: white;
    text-align: center;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+   padding: 0;
 
    background-image: url('assets/backgrounds/article-page-pop-up/nl-background.jpg');
    width: 320px;
    height: 300px;
+   margin: 0 auto;
+   left: 0;
 
    .sign-up-content {
       padding-top: 13px;
+   }
+
+   .x-icon-wrapper {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      right: 6px;
+      top: 6px;
+      cursor: pointer;
+
+      .bar {
+         width: 14px;
+         height: 2px;
+         background-color: white;
+      }
+
+      #top-bar {
+         margin-right: -14px;
+         transform: rotate(45deg);
+      }
+
+      #bottom-bar {
+         transform:rotate(135deg);
+      }
    }
 
    .dotted-lines {
@@ -17980,6 +17988,10 @@ $temp-margins: 0 auto;
       max-width: 87%;
       margin: 0 auto;
 
+      .email-input {
+         margin: 0;
+      }
+
       .sign-up-button {
          margin: 7px 0 0;
       }
@@ -17989,9 +18001,14 @@ $temp-margins: 0 auto;
       font-size: 37px;
       margin: 0.5em 0;
       margin: 0;
+      max-width: none;
+      padding: 0;
+      line-height: normal;
+      text-transform: none;
    }
 
    .sign-up-header.yellow-color {
+      color: #fccd3b;
       margin-top: -8px;
    }
 
@@ -18003,6 +18020,21 @@ $temp-margins: 0 auto;
    @media (min-width: $temp-media-query) {
       width: 850px;
       height: 425px;
+
+      .x-icon-wrapper {
+         width: 22px;
+         height: 22px;
+         top: 11px;
+         right: 11px;
+
+         .bar {
+            width: 22px;
+         }
+
+         #top-bar {
+            margin-right: -22px;
+         }
+      }
 
       .line-break {
          width: auto;
@@ -18041,11 +18073,13 @@ $temp-margins: 0 auto;
 
       .sub-text-large, .sub-text-medium, .sign-up-form .sign-up-button, .sign-up-form .email-input {
          font-size: 36px;
+         line-height: 38px;
       }
 
       .dotted-lines {
          padding: 3px 0 15px;
          background: none;
+         margin: 6px 0 2px;
       }
    }
 }
@@ -18133,6 +18167,7 @@ $temp-margins: 0 auto;
 
       .sign-up-copy, .sign-up-form .sign-up-button, .sign-up-form .email-input {
          font-size: 25px;
+         line-height: 25px;
       }
 
       .sign-up-copy {
