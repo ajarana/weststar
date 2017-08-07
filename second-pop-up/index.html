@@ -9,7 +9,7 @@
       <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Source+Code+Pro:700" rel="stylesheet">
       <title>WestStar</title>
 
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
 
       <style>
       @font-face {
@@ -53,7 +53,7 @@
       <main style="padding: 20px; width: 100%;">
 
 
-         <figure class="email-sign-up static-newsletter-sign-up">
+         <figure style="display: none" class="email-sign-up static-newsletter-sign-up">
             <div class="sign-up-content">
                <p class="sign-up-copy">Breaking news, tech trends, helpful tips, and more.</p>
                <form class="newsletter-subscribe-form sign-up-form">
@@ -68,7 +68,7 @@
          <br>
          <br>
 
-         <figure class="email-sign-up bottom-article-sign-up">
+         <figure style="display: none" class="email-sign-up bottom-article-sign-up">
             <img id="kimHeart" src="css/assets/backgrounds/bottom-article-sign-up/kim-heart-hand.jpg" alt="Hands in the shape of a heart.">
 
             <div class="sign-up-content">
@@ -94,17 +94,7 @@
          <br>
          <br>
 
-		 <div style="text-align: center;">
-		 <div style="padding-bottom: 30px;">
-		 <a style="font-size: 20px" href="home-page-pop-up/index.html">Tech on your time (home-page pop-up)</a>
-	 	 </div>
-
-		 <div>
-		 <a style="font-size: 20px" href="article-page-pop-up/index.html">Get more (article-page pop-up)</a>
-	 	 </div>
-	 	</div>
-
-         <div class="modal subscribe-modal newsletter-subscribe-modal">
+         <div style="display: block" class="modal subscribe-modal newsletter-subscribe-modal">
          <figure class="modal-window email-sign-up article-page-pop-up">
             <div class="modal-close flex-align-center x-icon-wrapper">
                <div id="top-bar" class="bar"></div>
@@ -143,7 +133,7 @@
          <br>
          <br>
 
-         <div class="modal subscribe-modal newsletter-subscribe-modal">
+         <div style="display: none" class="modal subscribe-modal newsletter-subscribe-modal">
          <figure class="modal-window email-sign-up home-page-pop-up">
             <div class="sign-up-content">
                <section>
